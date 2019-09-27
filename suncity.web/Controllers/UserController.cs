@@ -1,74 +1,83 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using suncity.web.Models.User;
+using Suncity.Web.Context;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace suncity.web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UsersController : ControllerBase
     {
-        // GET api/values
+        private readonly SuncityContext _context;
+
+        public UsersController(SuncityContext context)
+        {
+            _context = context;
+        }
+
+        // GET api/users
         [HttpGet]
-        public ActionResult<IEnumerable<SunCityUser>> Get()
+        public async Task<ActionResult<IEnumerable<SunCityUser>>> Get()
         {
-            return new JsonResult(GenerateSunCityUsers());
+            return await _context.Users.ToListAsync();
         }
 
-        // GET api/values/5
+        // GET api/users/
         [HttpGet("{id}")]
-        public ActionResult<SunCityUser> Get(Guid id)
+        public async Task<ActionResult<SunCityUser>> Get(Guid id)
         {
-            var SCUser = GenerateUser();
-            SCUser.Id = id;
-            return SCUser;
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] SunCityUser value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(Guid id, [FromBody] SunCityUser value)
-        {
-            // TODO implement
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(Guid id)
-        {
-            // TODO delete
-        }
-
-        private static IEnumerable<SunCityUser> GenerateSunCityUsers()
-        {
-            int usersCount = 5;
-            for(int i = 0; i < usersCount; i++)
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
             {
-                yield return GenerateUser();
+                return NotFound();
             }
+
+            return user;
         }
 
-        private static SunCityUser GenerateUser()
+        // POST: api/users
+        [HttpPost]
+        public async Task<ActionResult<SunCityUser>> CreateUser(SunCityUser user)
         {
-            return new SunCityUser
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(CreateUser), new { id = user.Id }, user);
+        }
+
+        // PUT: api/users
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateUser(Guid id, SunCityUser user)
+        {
+            if (id != user.Id)
             {
-                Id = Guid.NewGuid(),
-                Name = "Василий",
-                Surname = "Сидоров",
-                MiddleName = "Петрович",
-                BirthDate = DateTime.Now + TimeSpan.FromDays(5000),
-                Email = "nonstop.vk.hack@vk.hack.run",
-                LastLogon = DateTime.Now,
-                Registered = DateTime.Now + TimeSpan.FromDays(-100),
-                PhoneNumber = "+7890123456",
-                UserName = "NonStop"
-            };
+                return BadRequest();
+            }
+
+            _context.Entry(user).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        // DELETE: api/users
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteUser(Guid id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }
