@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity.web\\suncity.web.csproj": {}
+    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity.web\\suncity.web.csproj": {
+    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity.web\\suncity.web.csproj",
+        "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
         "projectName": "suncity.web",
-        "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity.web\\suncity.web.csproj",
+        "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
         "packagesPath": "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity.web\\obj\\",
+        "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,8 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://bams-aws.refinitiv.com/artifactory/api/nuget/default.nuget.global": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
@@ -58,6 +57,18 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "NpgSql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [

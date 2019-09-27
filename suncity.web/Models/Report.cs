@@ -1,22 +1,23 @@
 using System;
 using suncity.web.Models.User;
+
 namespace Suncity.Web.Models
 {
     public class Report
     {
         public long Id { get; set; }
-        public DateTime date { get; set; }
-        public SCUser child { get; set; }
-        public SCUser mentor { get; set; }
-        public bool status { get; set; }
-        public int duration { get; set; }
+        public DateTime Date { get; set; }
+        public SunCityUser Child { get; set; }
+        public SunCityUser Mentor { get; set; }
+        public bool Status { get; set; }
+        public int Duration { get; set; }
 
-        public string whatDidYouPlanToDoAtTheMeeting { get; set; }
-        public string whatDidYouEndUpDoing { get; set; }
-        public string assessTheMoodOfTheChildBeforeAndAfterTheMeeting { get; set; }
-        public string targetForNextMeeting { get; set; }
-        public string describeYourMoodAfterTheMeeting { get; set; }
-        public string additionalComment { get; set; }
-        public string questions { get; set; }
+        public string WhatDidYouPlanToDoAtTheMeeting { get; set; }
+        public string WhatDidYouEndUpDoing { get; set; }
+        public string AssessTheMoodOfTheChildBeforeAndAfterTheMeeting { get; set; }
+        public string TargetForNextMeeting { get; set; }
+        public string DescribeYourMoodAfterTheMeeting { get; set; }
+        public string AdditionalComment { get; set; }
+        public string Questions { get; set; }
     }
 }

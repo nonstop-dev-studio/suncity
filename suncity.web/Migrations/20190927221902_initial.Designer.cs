@@ -10,23 +10,59 @@ using Suncity.Web.Context;
 namespace suncity.web.Migrations
 {
     [DbContext(typeof(SuncityContext))]
-    [Migration("20190927203245_twoMigratio")]
-    partial class twoMigratio
+    [Migration("20190927221902_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<int?>("AddressRegistrationId");
+
+                    b.Property<int?>("AddressResidenceId");
+
+                    b.Property<bool>("AgreedToMakeReports");
+
+                    b.Property<bool>("AgreedToShareMedia");
+
+                    b.Property<bool>("AgreedWithLiabilities");
+
+                    b.Property<bool>("ConsentProcessingPersonalData");
+
+                    b.Property<int?>("ContactsId");
+
+                    b.Property<Guid?>("EmploymentId");
+
+                    b.Property<string>("Hobbies");
+
+                    b.Property<bool>("IsRussianCitizenship");
+
+                    b.Property<string>("MaritalStatusState");
+
+                    b.Property<string>("ProgrammInformationSource");
+
+                    b.Property<Guid>("UserId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("AddressRegistrationId");
+
+                    b.HasIndex("AddressResidenceId");
+
+                    b.HasIndex("ContactsId");
+
+                    b.HasIndex("EmploymentId");
+
+                    b.HasIndex("MaritalStatusState");
 
                     b.ToTable("Questionnaires");
                 });
@@ -74,7 +110,11 @@ namespace suncity.web.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("AddressLine");
+                    b.Property<string>("City");
+
+                    b.Property<string>("Country");
+
+                    b.Property<string>("Street");
 
                     b.Property<string>("ZipCode");
 
@@ -106,66 +146,74 @@ namespace suncity.web.Migrations
 
                     b.Property<string>("EducationalInstitution");
 
-                    b.Property<Guid?>("SCUserId");
+                    b.Property<Guid?>("QuestionnaireId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SCUserId");
+                    b.HasIndex("QuestionnaireId");
 
                     b.ToTable("Education");
                 });
 
-            modelBuilder.Entity("suncity.web.Models.User.SCUser", b =>
+            modelBuilder.Entity("suncity.web.Models.User.Employment", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("AddressRegistrationId");
+                    b.Property<string>("CompanyName");
 
-                    b.Property<int?>("AddressResidenceId");
+                    b.Property<string>("CompanyPhoneNumber");
+
+                    b.Property<string>("Position");
+
+                    b.Property<string>("Responsibilities");
+
+                    b.Property<string>("WorkSchedule");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Employment");
+                });
+
+            modelBuilder.Entity("suncity.web.Models.User.MaritalStatus", b =>
+                {
+                    b.Property<string>("State")
+                        .ValueGeneratedOnAdd();
+
+                    b.HasKey("State");
+
+                    b.ToTable("MaritalStatus");
+                });
+
+            modelBuilder.Entity("suncity.web.Models.User.SunCityUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("BirthDate");
 
-                    b.Property<int?>("ContactsId");
+                    b.Property<string>("Email");
 
-                    b.Property<bool>("IsRussianCitizenship");
+                    b.Property<DateTime>("LastLogon");
 
                     b.Property<string>("MiddleName");
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<DateTime>("Registered");
+
                     b.Property<string>("Surname");
+
+                    b.Property<string>("UserName");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AddressRegistrationId");
-
-                    b.HasIndex("AddressResidenceId");
-
-                    b.HasIndex("ContactsId");
-
-                    b.ToTable("SCUser");
+                    b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Suncity.Web.Models.Report", b =>
-                {
-                    b.HasOne("suncity.web.Models.User.SCUser", "child")
-                        .WithMany()
-                        .HasForeignKey("childId");
-
-                    b.HasOne("suncity.web.Models.User.SCUser", "mentor")
-                        .WithMany()
-                        .HasForeignKey("mentorId");
-                });
-
-            modelBuilder.Entity("suncity.web.Models.User.Education", b =>
-                {
-                    b.HasOne("suncity.web.Models.User.SCUser")
-                        .WithMany("Education")
-                        .HasForeignKey("SCUserId");
-                });
-
-            modelBuilder.Entity("suncity.web.Models.User.SCUser", b =>
+            modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
                 {
                     b.HasOne("suncity.web.Models.Address", "AddressRegistration")
                         .WithMany()
@@ -178,6 +226,32 @@ namespace suncity.web.Migrations
                     b.HasOne("suncity.web.Models.User.Contacts", "Contacts")
                         .WithMany()
                         .HasForeignKey("ContactsId");
+
+                    b.HasOne("suncity.web.Models.User.Employment", "Employment")
+                        .WithMany()
+                        .HasForeignKey("EmploymentId");
+
+                    b.HasOne("suncity.web.Models.User.MaritalStatus", "MaritalStatus")
+                        .WithMany()
+                        .HasForeignKey("MaritalStatusState");
+                });
+
+            modelBuilder.Entity("Suncity.Web.Models.Report", b =>
+                {
+                    b.HasOne("suncity.web.Models.User.SunCityUser", "child")
+                        .WithMany()
+                        .HasForeignKey("childId");
+
+                    b.HasOne("suncity.web.Models.User.SunCityUser", "mentor")
+                        .WithMany()
+                        .HasForeignKey("mentorId");
+                });
+
+            modelBuilder.Entity("suncity.web.Models.User.Education", b =>
+                {
+                    b.HasOne("Suncity.Web.Models.Questionnaire")
+                        .WithMany("Education")
+                        .HasForeignKey("QuestionnaireId");
                 });
 #pragma warning restore 612, 618
         }

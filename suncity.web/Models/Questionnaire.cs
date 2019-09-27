@@ -26,7 +26,5 @@ namespace Suncity.Web.Models
         public bool ConsentProcessingPersonalData { get; set; }
         public bool AgreedWithLiabilities { get; set; }
 
-        
-
     }
 }
