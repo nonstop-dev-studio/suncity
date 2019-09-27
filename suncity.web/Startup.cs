@@ -29,7 +29,7 @@ namespace suncity.web
         public void ConfigureServices(IServiceCollection services)
         {
 
-            var connection = Configuration["ConnectionStrings:DefaultConnection"];
+            var connection = Configuration["ConnectionStrings:HerokuConnection"];
             services.AddDbContext<SuncityContext>(options
                 => options.UseNpgsql(connection));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
