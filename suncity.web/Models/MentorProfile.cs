@@ -4,7 +4,7 @@ namespace suncity.web.Models
 {
     public class MentorProfile
     {
-        SCUser Mentor { get; set; }
+        SunCityUser Mentor { get; set; }
 
         public string Religion { get; set; }
 

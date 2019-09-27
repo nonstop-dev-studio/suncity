@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using suncity.web.Models.User;
 using Suncity.Web.Models;
 
 namespace Suncity.Web.Context
@@ -19,5 +19,7 @@ namespace Suncity.Web.Context
 
         public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<Report> Reports { get; set; }
+        public DbSet<Questionnaire> Questionnaires { get; set; }
+        public DbSet<SunCityUser> Users { get; set; }
     }
 }
