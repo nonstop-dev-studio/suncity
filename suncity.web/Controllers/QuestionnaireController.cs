@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 using Suncity.Web.Context;
 using Suncity.Web.Models;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Suncity.Web.Controllers
 {
@@ -52,7 +51,7 @@ namespace Suncity.Web.Controllers
 
         // PUT: api/questionnaires/5
         [HttpPut("{id}")]
-        public async Task<ActionResult> PutQuestionnaire(long id, Questionnaire questionnaire)
+        public async Task<ActionResult> PutQuestionnaire(Guid id, Questionnaire questionnaire)
         {
             if (id != questionnaire.Id)
             {

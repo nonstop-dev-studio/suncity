@@ -12,6 +12,7 @@
         HighSchool = 1,
         Сollege = 2,
         BachelorDegree = 3,
-        MasterDegree = 4
+        Specialist = 4,
+        MasterDegree = 5
     }
 }
