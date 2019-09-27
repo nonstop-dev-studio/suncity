@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "suncity.web", "suncity.web.csproj", "{7904FB16-476D-4D89-A22E-ABBCD0004A6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Suncity.Web", "Suncity.Web.csproj", "{7904FB16-476D-4D89-A22E-ABBCD0004A6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

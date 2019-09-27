@@ -3,17 +3,26 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <AssemblyName>Suncity.Web</AssemblyName>
+    <RootNamespace>Suncity.Web</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Identity\Dat\**" />
+    <Content Remove="Areas\Identity\Dat\**" />
+    <EmbeddedResource Remove="Areas\Identity\Dat\**" />
+    <None Remove="Areas\Identity\Dat\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
