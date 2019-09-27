@@ -8,5 +8,6 @@ namespace Suncity.Web.Context
     {
         public SuncityContext(DbContextOptions<SuncityContext> options) : base(options) { }
         public DbSet<Report> Reports { get; set; }
-    }
+        public DbSet<Questionnaire> Questionnaires { get; set; }
+}
 }
