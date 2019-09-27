@@ -2,6 +2,7 @@
 {
     public class Education
     {
+        public int Id { get; set; }
         public EducationLevel EducationLevel { get; set; }
         public string EducationalInstitution { get; set; }
     }
