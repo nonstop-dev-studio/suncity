@@ -7,6 +7,7 @@ import { AccountComponent } from './toolbar/account/account.component';
 import { ChatComponent } from '../app/chat/chat.component';
 import { FaqComponent } from '../app/faq/faq.component';
 import { ReportComponent } from '../app/report/report.component';
+import { SignupComponent } from './signup/signup.component';
 import { ReportAddComponent } from '../app/report-add/report-add.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'report', component: ReportComponent },
+  { path: 'signup', component: SignupComponent },
   { path: 'report/add', component: ReportAddComponent },
   { path: '**', redirectTo: '' },
 ];

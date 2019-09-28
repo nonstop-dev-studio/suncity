@@ -15,6 +15,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { JwtService } from './services/jwt.service';
 import { AccountComponent } from './toolbar/account/account.component';
 import { ReportComponent } from './report/report.component';
+import { SignupComponent } from './signup/signup.component';
 import { ReportAddComponent } from './report-add/report-add.component';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ReportAddComponent } from './report-add/report-add.component';
     ChatComponent,
     FaqComponent,
     ReportComponent,
+    SignupComponent
     ReportAddComponent
   ],
   imports: [

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { JwtService } from 'src/app/services/jwt.service';
 
 @Component({
   selector: 'app-account',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(private jwsService: JwtService) { }
 
   ngOnInit() {
+  }
+  logout() {
+    this.jwsService.logout();
+
   }
 
 }
