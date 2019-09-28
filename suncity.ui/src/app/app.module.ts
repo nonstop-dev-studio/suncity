@@ -13,12 +13,15 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { JwtService } from './services/jwt.service';
+import { AccountComponent } from './toolbar/account/account.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     ToolbarComponent,
+    LoginComponent,
+    AccountComponent,
     QuestionnaireComponent,
     LoginComponent,
     ChatComponent,

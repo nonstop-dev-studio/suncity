@@ -62,13 +62,10 @@
               "target": "Package",
               "version": "[2.2.3, )"
             },
-<<<<<<< Updated upstream
             "NpgSql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
               "version": "[1.1.1, )"
             },
-=======
->>>>>>> Stashed changes
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[2.2.0, )"

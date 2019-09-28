@@ -20,4 +20,7 @@ export class ToolbarComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
+  account() {
+    this.router.navigateByUrl('/account');
+  }
 }
