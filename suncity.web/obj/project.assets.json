@@ -13089,23 +13089,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vadim\\.nuget\\packages\\": {},
+    "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj",
+      "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
       "projectName": "suncity.web",
-      "projectPath": "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj",
-      "packagesPath": "C:\\Users\\Vadim\\.nuget\\packages\\",
-      "outputPath": "D:\\VKHack\\SunCity\\suncity.web\\obj\\",
+      "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
+      "packagesPath": "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrei_Fedotov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
