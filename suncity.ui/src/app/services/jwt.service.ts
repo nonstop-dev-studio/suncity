@@ -5,6 +5,7 @@ import { tap } from 'rxjs/operators';
 import { LoginDto } from '../models/loginDto';
 import { RegisterDto } from '../models/registerDto';
 
+import {Questionnaire} from "src/app/models/questionnaire";
 @Injectable({
     providedIn: 'root'
 })
@@ -37,5 +38,8 @@ export class JwtService {
     public get loggedIn(): boolean {
         console.log('QQQ');
         return localStorage.getItem('token') !== null;
+    }
+    postQuestionnaire(questionnaire: Questionnaire) {
+         return this.httpClient.post(environment.postQuestionnaire,(questionnaire));
     }
 }
