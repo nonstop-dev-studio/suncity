@@ -2923,25 +2923,6 @@
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
-      "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.1.2",
-          "Microsoft.EntityFrameworkCore.Relational": "1.1.2",
-          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.2",
-          "Microsoft.Extensions.DependencyInjection": "1.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
-          "NETStandard.Library": "1.6.1",
-          "Npgsql": "3.2.5",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll": {}
-        }
-      },
       "NuGet.Frameworks/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -6079,7 +6060,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "uPR2OiBmPGR5oBj68CrOC7hjohElT7bdrUcOLHRo5vi6qGuWf4RVLAXtSQGn4H8pR4I+cqT5I9T2YU3nkhB9sQ==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hasTools": true,
@@ -8187,19 +8168,6 @@
         "npgsql.entityframeworkcore.postgresql.nuspec"
       ]
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.1": {
-      "sha512": "UXgRNtmOIc/gw3bvdof4hZu4rL9xIUGeSWklasd+Oj9SF7EH+OTu43/Qsz6YYrqX2sem2qxd004LwtW/CWpVHg==",
-      "type": "package",
-      "path": "npgsql.entityframeworkcore.postgresql.design/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net451/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll",
-        "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll",
-        "npgsql.entityframeworkcore.postgresql.design.1.1.1.nupkg.sha512",
-        "npgsql.entityframeworkcore.postgresql.design.nuspec"
-      ]
-    },
     "NuGet.Frameworks/4.7.0": {
       "sha512": "qbXaB76XYUVLocLBs8Z9TS/ERGK2wm797feO+0JEPFvT7o7MRadOR77mqaSD4J1k8G+DlZQyq+MlkCuxrkr3ag==",
       "type": "package",
@@ -8239,7 +8207,7 @@
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
+      "sha512": "CdNouhblADi37AJetyX1vOvYuU1FXr4xObfagF/OpdJLwh+QydnQ/yBc7l2gtmUliWHeSoObwvfjJBhF1Am8uA==",
       "type": "package",
       "path": "runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8252,7 +8220,7 @@
       ]
     },
     "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "+yH1a49wJMy8Zt4yx5RhJrxO/DBDByAiCzNwiETI+1S4mPdCu0OY4djdciC7Vssk0l22wQaDLrXxXkp+3+7bVA==",
+      "sha512": "ncE+wmlVmxqc6dFJOTPWZb2whUqbAPLsVilGJ8H/+cRlaEYxraeeycu6hky5X4MYIzDdxf2fg1B+qpxlN5RzDQ==",
       "type": "package",
       "path": "runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8265,7 +8233,7 @@
       ]
     },
     "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "c3YNH1GQJbfIPJeCnr4avseugSqPrxwIqzthYyZDN6EuOyNOzq+y2KSUfRcXauya1sF4foESTgwM5e1A8arAKw==",
+      "sha512": "DStGGGTmIPXS5ucu2z02NQsFhu6cp4i/boIDA5OEleeLJMMGEDubQZ/Y2PNDv52EFaBwxYvY/FSY6zOXjYW7Dw==",
       "type": "package",
       "path": "runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8278,7 +8246,7 @@
       ]
     },
     "runtime.native.System/4.3.0": {
-      "sha512": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
+      "sha512": "TlTAuAJtDOiGvNlafyjgGRPVwmbgUwcfXVYuamaFCeJETpV3JksTq7WRJ6/G3AUR5CchEVn9j3m0WMeifz5LRQ==",
       "type": "package",
       "path": "runtime.native.system/4.3.0",
       "files": [
@@ -8306,7 +8274,7 @@
       ]
     },
     "runtime.native.System.IO.Compression/4.3.0": {
-      "sha512": "b+V9JC/Ii3sR659flBeaBJww111425tgjcDS1k+hqV4sGh9FALRDBvJnDtQ895gAzpPTUOFDHdqaZ2Et7BpZMg==",
+      "sha512": "yZF4yybIw2g+A9E3tLjx9lWGUWRdHI/es6ADq+KnZE1J1rvas7BnDw8aL4+p598B920Vfxzaf+cS9VJ+QRtrpg==",
       "type": "package",
       "path": "runtime.native.system.io.compression/4.3.0",
       "files": [
@@ -8319,7 +8287,7 @@
       ]
     },
     "runtime.native.System.Net.Http/4.3.0": {
-      "sha512": "ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
+      "sha512": "MkPbcr1yEjIgM/xJ5SesK7iAuh2jvltpYMVkJpGwJnCho4gghI5lFC/owLnRolIHFzQYNdNtLVIzE9wSMiunUw==",
       "type": "package",
       "path": "runtime.native.system.net.http/4.3.0",
       "files": [
@@ -8332,12 +8300,11 @@
       ]
     },
     "runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "DloMk88juo0OuOWr56QG7MNchmafTLYWvABy36izkrLI5VledI0rq28KGs1i9wbpeT9NPQrx/wTf8U2vazqQ3Q==",
+      "sha512": "5H9GUVinRP8r9gVuOu/fNPS8JWp1M3dQ6AyBwlqCdfM4VBfla+6Oo0b2ml0jhTx55HF4ei3OfP87VWlcvi3d8Q==",
       "type": "package",
       "path": "runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -8346,7 +8313,7 @@
       ]
     },
     "runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "NS1U+700m4KFRHR5o4vo9DSlTmlCKu/u7dtE5sUHVIPB+xpXxYQvgBgA6wEIeCz6Yfn0Z52/72WYsToCEPJnrw==",
+      "sha512": "X9OUIbAws9CTJPP8NQK9AvODFZ96Sk8MGnbRFVtmH2P31DtQdzCA5gOXUWsl91Kzv8McjDR1c+j1bNIgCyd3Zg==",
       "type": "package",
       "path": "runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8359,7 +8326,7 @@
       ]
     },
     "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "b3pthNgxxFcD+Pc0WSEoC0+md3MyhRS6aCEeenvNE3Fdw1HyJ18ZhRFVJJzIeR/O/jpxPboB805Ho0T3Ul7w8A==",
+      "sha512": "7ssmBl/iKw7jnNuhJHsVeDBp9ynO4Qm6qt0nKuhgrZsVEYpiYpkdt97lK/k03RX5FLn0yI6rf6N3k5SJlTbMeQ==",
       "type": "package",
       "path": "runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8372,7 +8339,7 @@
       ]
     },
     "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "KeLz4HClKf+nFS7p/6Fi/CqyLXh81FpiGzcmuS8DGi9lUqSnZ6Es23/gv2O+1XVGfrbNmviF7CckBpavkBoIFQ==",
+      "sha512": "AQyYsrASEugTLBdJkyioT8cRBp8hjX4EWfTcykm+ZzYXUu6YRohrAbjHqwEzBI2v/EpuyfyHXgvGFSBAD61GnQ==",
       "type": "package",
       "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8385,12 +8352,11 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple/4.3.0": {
-      "sha512": "kVXCuMTrTlxq4XOOMAysuNwsXWpYeboGddNGpIgNSZmv1b6r/s/DPk0fYMB7Q5Qo4bY68o48jt4T4y5BVecbCQ==",
+      "sha512": "KHLZwdHgfpLPctilaoZgShQ//+rxXUha1p3gRHfCIw/FpOf6UKVvfEyxr7ximEMiDKo9p2R/vcqD2qPEJv/rsQ==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
@@ -8399,7 +8365,7 @@
       ]
     },
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
+      "sha512": "3UTHPAK9ah05iHtWsfAHU5k07GT0Bphrc8JjWs8a1iHXb1kx4LrjEBtXe3IYE748Vo+UBB4fjhhFyWWMHhCZ2A==",
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8412,7 +8378,7 @@
       ]
     },
     "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "T5NvFgmHX0WH4c7lP72krsnk+IJI10vJf2j2twGE+5QBRA4RyRAgD+ZjEgdmpLOjW4B+nZGaadewTCUcR899OQ==",
+      "sha512": "HVPGAqQ4iPJPUZ3Ujb4+VERazWq0hBnVt0OG2G0PiSAyeJSh6J1Oye/NWBOob5aZxj0mG+pzhJL27dkgATV2yg==",
       "type": "package",
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8425,7 +8391,7 @@
       ]
     },
     "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
+      "sha512": "MyKXCLjKe19b+/+OF2FwKDM+Rodb4a4F5cGWwhKHlsCXSSd0EENF3Uho91rAEUpF1aO7JjxpRTH3APF3GAOUcw==",
       "type": "package",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8438,7 +8404,7 @@
       ]
     },
     "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "I8bKw2I8k58Wx7fMKQJn2R8lamboCAiHfHeV/pS65ScKWMMI0+wJkLYlEKvgW1D/XvSl/221clBoR2q9QNNM7A==",
+      "sha512": "56+t2L15VELYo6PGAqhF8/hvSDMIP8F7ZRk5vkEg9RXhmuiCiGgzsgdV84kvA3gmZzt9UA9F2n6+rLlrv+ch6w==",
       "type": "package",
       "path": "runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8451,7 +8417,7 @@
       ]
     },
     "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
+      "sha512": "hKY3vAExiuVv2hwp0PN/XBxRCia8wsDQKVBlOAdk4UruMMwLbKCO44EX8TWO//956yTUzPmYKqDCOfkPtU9+bw==",
       "type": "package",
       "path": "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -8509,7 +8475,7 @@
       ]
     },
     "System.AppContext/4.3.0": {
-      "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
+      "sha512": "HUiZUXppMIdDW+eq020jbWR5hgFbiPpFT5/npWp0ApJStcU5verP2MmtGLz+9sZ01nF25Nt2g/szSApNkwLMHg==",
       "type": "package",
       "path": "system.appcontext/4.3.0",
       "files": [
@@ -8592,12 +8558,11 @@
       ]
     },
     "System.Collections/4.3.0": {
-      "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
+      "sha512": "ak5QkgB2lo1FdD6f58NHFZ5WzNzrAy/7ARL9A9dEGUg7Xj4k7Nse5/6aSM/73oGb+udGJVOt+8Idq6M7nABsrQ==",
       "type": "package",
       "path": "system.collections/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8660,12 +8625,11 @@
       ]
     },
     "System.Collections.Concurrent/4.3.0": {
-      "sha512": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
+      "sha512": "NvRCgtx63AfOQl7AfIO+dYQ20aTj40W0ugqECqUro2X6w9zwP/t1wnE8Npny3i1os7BtHg9AjCpg4auaR0pFEQ==",
       "type": "package",
       "path": "system.collections.concurrent/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8751,7 +8715,7 @@
       ]
     },
     "System.Collections.NonGeneric/4.3.0": {
-      "sha512": "LE/oChpRvkSi3U25u0KnJcI44JeDZ1QJCyN4qFDx2uusEypdqR24w7lKYw21eYe5esuCBuc862wRmpF63Yy1KQ==",
+      "sha512": "oTl2bvjTyWXVnCmskrHp6NOQPLWkW7LeVRk/leGOI3EYny4X6YV5na7WhX9//CTKtWzez8k1kKcaqUJP2yGI7g==",
       "type": "package",
       "path": "system.collections.nongeneric/4.3.0",
       "files": [
@@ -8789,7 +8753,7 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "U/75MKA5GgYqEJec+Bpz1Ww8sfXbJt2qI8N/oCmK9EYzVX4ZD+YwjnzXiiiCQCQbehN71VP1ImUTFork0FuZWA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
@@ -8933,7 +8897,6 @@
       "path": "system.composition.attributedmodel/1.0.31",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Composition.AttributedModel.dll",
@@ -8999,7 +8962,7 @@
       ]
     },
     "System.Console/4.3.0": {
-      "sha512": "DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
+      "sha512": "ZwW+SckWy34s1UixYFVfZ+5FlIJNvcgv/Oe+zsdkp6m3rLtPhs06lDK/b5aa7tBSg2DNbvyTAv9a+fI/i4W26Q==",
       "type": "package",
       "path": "system.console/4.3.0",
       "files": [
@@ -9110,7 +9073,7 @@
       ]
     },
     "System.Diagnostics.Contracts/4.3.0": {
-      "sha512": "eelRRbnm+OloiQvp9CXS0ixjNQldjjkHO4iIkR5XH2VIP8sUB/SIpa1TdUW6/+HDcQ+MlhP3pNa1u5SbzYuWGA==",
+      "sha512": "CuGyDw9j++sIkQJVqEptnXJ3hHDUlZt48gzLmtJ77qNdDusdgFsjOHeDV46f6TCQBU62UQVZ4jeRVctsNa164Q==",
       "type": "package",
       "path": "system.diagnostics.contracts/4.3.0",
       "files": [
@@ -9169,12 +9132,11 @@
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {
-      "sha512": "ZUhUOdqmaG5Jk3Xdb8xi5kIyQYAA4PnTNlHx1mu9ZY3qv4ELIdKbnL/akbGaKi2RnNUWaZsAs31rvzFdewTj2g==",
+      "sha512": "VJ9+6vmT9JHXTih63iPrs3TUxJHrwv+yrQtxSooSVQavN7fTvk2YMg/xTt3S2AVpmqXcAMgm1d958Jr0FxLR9Q==",
       "type": "package",
       "path": "system.diagnostics.debug/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9303,7 +9265,7 @@
       ]
     },
     "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
+      "sha512": "22BtAhBLzTTGa6r2VwDy3hhw8SPCmRgkRDYL7x8oIwSZdUxpannXMlqhZkCtoXm92hYjsWGOvDvK9lP0vpmdWQ==",
       "type": "package",
       "path": "system.diagnostics.stacktrace/4.3.0",
       "files": [
@@ -9342,12 +9304,11 @@
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
-      "sha512": "UUvkJfSYJMM6x527dJg2VyWPSRqIVB0Z7dbjHst1zmwTXz5CcXSYJFWRpuigfbO1Lf7yfZiIaEUesfnl/g5EyA==",
+      "sha512": "T/oIMSHU2qY7J46lQGQPyhrw3jhnt2LbLR7J3l1OcpanZ4g5w5aj66Zwnpy71xH6w5BM0kV/t9cyK7Hx/MQfZg==",
       "type": "package",
       "path": "system.diagnostics.tools/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9399,12 +9360,11 @@
       ]
     },
     "System.Diagnostics.Tracing/4.3.0": {
-      "sha512": "rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
+      "sha512": "pmlp3xA5winIssON0b1Eqf67tUwBYbJFptXG78mPcF7j54mGsNrCcp3xxgjvqI6pCyowZE47eiaFHcCKze4+sQ==",
       "type": "package",
       "path": "system.diagnostics.tracing/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9489,7 +9449,7 @@
       ]
     },
     "System.Dynamic.Runtime/4.3.0": {
-      "sha512": "SNVi1E/vfWUAs/WYKhE9+qlS6KqK0YVhnlT0HQtr8pMIA8YX3lwy3uPMownDwdYISBdmAF/2holEIldVp85Wag==",
+      "sha512": "tTbScO21NumnNRI9lWQ2Q8x7F2MXHahiFA03+wOloIKfW3EFaFDnW9xrgXyPMfIajgzOA67wOXcf2G36uw7GtQ==",
       "type": "package",
       "path": "system.dynamic.runtime/4.3.0",
       "files": [
@@ -9559,12 +9519,11 @@
       ]
     },
     "System.Globalization/4.3.0": {
-      "sha512": "kYdVd2f2PAdFGblzFswE4hkNANJBKRmsfa2X5LG2AcWE1c7/4t0pYae1L8vfZ5xvE2nK/R9JprtToA61OSHWIg==",
+      "sha512": "x3ykJVPBmqZuuMlr79scGgysZfXvTIzMuiNiIeyWnTx/Mk6JYPgrDocouyQ0yej4PIZuQxx6cFXZ1pMcCi3odg==",
       "type": "package",
       "path": "system.globalization/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9627,7 +9586,7 @@
       ]
     },
     "System.Globalization.Calendars/4.3.0": {
-      "sha512": "GUlBtdOWT4LTV3I+9/PJW+56AnnChTaOqqTLFtdmype/L500M2LIyXgmtd9X2P2VOkmJd5c67H5SaC2QcL1bFA==",
+      "sha512": "z4qdA073RXHqIOL8VpdO3XOGj8gsh4RJOvuWbcphuZ3180KhCmoBCRqzCIzJUG2BwNay0pYRkke7lmBlEtpwag==",
       "type": "package",
       "path": "system.globalization.calendars/4.3.0",
       "files": [
@@ -9664,7 +9623,7 @@
       ]
     },
     "System.Globalization.Extensions/4.3.0": {
-      "sha512": "FhKmdR6MPG+pxow6wGtNAWdZh7noIOpdD5TwQ3CprzgIE1bBBoim0vbR1+AWsWjQmU7zXHgQo4TWSP6lCeiWcQ==",
+      "sha512": "P6GKuboARIzvZCCJrEdNivgkHyOq+viy0a9ey5CfBTvda5zEOXLCSWXHUUfumcW9ucjxFQ3DSIOj0qPDtOoXoA==",
       "type": "package",
       "path": "system.globalization.extensions/4.3.0",
       "files": [
@@ -9751,12 +9710,11 @@
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "sha512": "gk/1eOcXO0lar4fk9hiJTYtyh6S7nAEEmKeyJ1V3G0+bzHt8pN2lMr79n4pbGk19RLvDGAthHXT4z/aYpaeHEA==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9832,12 +9790,11 @@
       ]
     },
     "System.IO.Compression/4.3.0": {
-      "sha512": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
+      "sha512": "CdvNp3Qb4Mm5OjtQSKx5NJSHg2bo89B8a/DH9ImG6Il1klGfvTcpTkwTq7IhW689g31U7fgc1JYYTujzMjghDA==",
       "type": "package",
       "path": "system.io.compression/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9903,7 +9860,7 @@
       ]
     },
     "System.IO.FileSystem/4.3.0": {
-      "sha512": "3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
+      "sha512": "bCGMq1kaQ2AUyOVsojtOLnz45lAT1MjQHwcN2yGm+/719sS1+WXH/rz4j8aJIrLL8Z6449jqkpli0K7vHmIwiw==",
       "type": "package",
       "path": "system.io.filesystem/4.3.0",
       "files": [
@@ -9940,7 +9897,7 @@
       ]
     },
     "System.IO.FileSystem.Primitives/4.3.0": {
-      "sha512": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
+      "sha512": "XtMrgsCtMmeLlQ5774SYPV09cJ6ZwR8zXB+yWTwjbYvp0uxXHTJG+XKq87tBdX0IQau6FKT+jzfBnFqcTqR6fg==",
       "type": "package",
       "path": "system.io.filesystem.primitives/4.3.0",
       "files": [
@@ -10000,12 +9957,11 @@
       ]
     },
     "System.Linq/4.3.0": {
-      "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
+      "sha512": "Hnca76qKoVC22Ht+COQGOBZBVnprKsAm5psAhoIGhKXoQB4+aWk3GUpQqah1G9aE8EjhCRZpjYVVdveV5pNpsg==",
       "type": "package",
       "path": "system.linq/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10072,12 +10028,11 @@
       ]
     },
     "System.Linq.Expressions/4.3.0": {
-      "sha512": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
+      "sha512": "WmjyYO6UwDrKvhOP6uScOw6EidiL3M0U/uea6nI/PRMwGsbC9AV+k65/XtVcRhnXdmE4gGzfQw90jbeDnoVnLw==",
       "type": "package",
       "path": "system.linq.expressions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10156,7 +10111,7 @@
       ]
     },
     "System.Linq.Parallel/4.3.0": {
-      "sha512": "td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
+      "sha512": "pX65OW8mIZ/lkn7X/JiLA2HANSY9B8VBMcX2AUd7Vv+bK1Zbd396AtlwhJgegmvy0pF+5A8S6MoHSaO7nJDoSw==",
       "type": "package",
       "path": "system.linq.parallel/4.3.0",
       "files": [
@@ -10212,7 +10167,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "SAV9JY3iLOKaiE7LBoldZoVDsBYuCWAO9ATl7j2GnQvpEy3TltRG0WJFWa8+jY1/R/qfdj/0mdb2RZT+CxPRvQ==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -10295,7 +10250,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+      "sha512": "vaj8wg7ZD/HDjtSiA7+RjPyaG4b2SnlibLl1lF+vRSkHsrE4CrJzPPoRuHdwYIAGgk+VutTIz0DRcJuPO3w6Yg==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -10377,12 +10332,11 @@
       ]
     },
     "System.Net.Primitives/4.3.0": {
-      "sha512": "qOu+hDwFwoZPbzPvwut2qATe3ygjeQBDQj91xlsaqGFQUI5i4ZnZb8yyQuLGpDGivEPIt8EJkd1BVzVoP31FXA==",
+      "sha512": "irdTkGrU8mjubHL3JS/7JInA6SBQpCK/+1EA4iQj0nar4LFVy+JTY4ZfTeiBed3Q6ck1F+2IG99BrRoT3zpGNw==",
       "type": "package",
       "path": "system.net.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10521,12 +10475,11 @@
       ]
     },
     "System.ObjectModel/4.3.0": {
-      "sha512": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
+      "sha512": "C4aiLZF839nTg93wnn6+JFyzzu2pDLrweqXp59rKxMOp8Bi+zMQn4AQwBtJS+310hyb64aDVeXHXmjqapbZw6A==",
       "type": "package",
       "path": "system.objectmodel/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10606,12 +10559,11 @@
       ]
     },
     "System.Reflection/4.3.0": {
-      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "sha512": "xiiTX9Zk06pFFIKje3Rr/s7qG5E1NGsn95JSEb4K8HlHWW4PYRisfg+uKkMO8q0wFS+fl+dpR0eSYIvuFuzOdw==",
       "type": "package",
       "path": "system.reflection/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10687,12 +10639,11 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "sha512": "76gw+w9gNguOmXuvAdtBwfJz5ypQBE2J/vLOZA8GtSb2el6Ar092ajVEfYGgpkhHvyEPYNCfa09VGAi13H83gQ==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10723,12 +10674,11 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "m2JhCmJ8Zlg7GIExhLkMGS2OdKZsNhcohZTEIvc42yW6QQpxcTenm5ZsyqKLtpgsfaXrNBiCHxx5lb3qLe/lQA==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10768,12 +10718,11 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
+      "sha512": "qk0S4FWwRgZTu622abx4BiahhA3d4LpBUiF8q2E+2TQDYj1GNnv9jAiSz6dA4vVbGVqsyOAHbIakVhaDludnSw==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10813,12 +10762,11 @@
       ]
     },
     "System.Reflection.Extensions/4.3.0": {
-      "sha512": "rJkrJD3kBI5B712aRu4DpSIiHRtr6QlfZSQsb0hYHrDCZORXCFjQfoipo2LaMUHoT9i1B7j7MnfaEKWDFmFQNQ==",
+      "sha512": "alloQ4stuoOYgdJH/8ES+jFK/gPH6/zo9mwEHVwTIYXtT/CV8juTP0T8+13G+M58wc1T8I/SU0DVkJPrHRBFBw==",
       "type": "package",
       "path": "system.reflection.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10891,12 +10839,11 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "sha512": "nvPPe6Hzck8k0wSxFv5i6Uel+FPeluiNWAgr4holk8S0JPbAZbGY1rclrzGC34GNDt3KYuyh69KPrAPZnROQCA==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10948,7 +10895,7 @@
       ]
     },
     "System.Reflection.TypeExtensions/4.3.0": {
-      "sha512": "7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
+      "sha512": "reqWmVX+wfA9ZEqk9m67JbcCWS24zdmdMKlLxbqt4NwRKVmpv/DPn/PLa3uDGxi53lhQQcy6dRTNqH+gOK7Idg==",
       "type": "package",
       "path": "system.reflection.typeextensions/4.3.0",
       "files": [
@@ -11001,12 +10948,11 @@
       ]
     },
     "System.Resources.ResourceManager/4.3.0": {
-      "sha512": "/zrcPkkWdZmI4F92gL/TPumP98AVDu/Wxr3CSJGQQ+XN6wbRZcyfSKVoPo17ilb3iOr0cCRqJInGwNMolqhS8A==",
+      "sha512": "2yVik2S7Y6P2l4clbTofg+JdoMuoqklZUVHAqhg6WKu2oQ+TmbNgrP5KDlCJhuW9IBn25OM6u2HAgp9NOYVnRw==",
       "type": "package",
       "path": "system.resources.resourcemanager/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11058,12 +11004,11 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "sha512": "kmA1337Nb5wJ5BPHcX2aBwKK9U18v2MiJIKjPDQOfPuNdit6K1x1ZNrn18l4f0zVmBCIDpuuBmZAb2b2nZmgbQ==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11175,7 +11120,7 @@
       ]
     },
     "System.Runtime.Extensions/4.3.0": {
-      "sha512": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
+      "sha512": "eb9ULGkFZ3zWRuljvWn6dZknM9R2OGwJb4JVL5ZSGHd4Im+pJDusbukjk181+ko6lvVXttIlAaJrcqveUArqZg==",
       "type": "package",
       "path": "system.runtime.extensions/4.3.0",
       "files": [
@@ -11255,7 +11200,7 @@
       ]
     },
     "System.Runtime.Handles/4.3.0": {
-      "sha512": "OKiSUN7DmTWeYb3l51A7EYaeNMnvxwE249YtZz7yooT4gOZhmTjIn48KgSsw2k2lYdLgTKNJw/ZIfSElwDRVgg==",
+      "sha512": "tBqVfNiDtTMlxwdnQkZqRK4c3bg/UlgezFL4WTUt3DQiCM2bnoqm0iiYH72/38qfNuy8fu8EWRo3fuVKw0KTsQ==",
       "type": "package",
       "path": "system.runtime.handles/4.3.0",
       "files": [
@@ -11292,12 +11237,11 @@
       ]
     },
     "System.Runtime.InteropServices/4.3.0": {
-      "sha512": "uv1ynXqiMK8mp1GM3jDqPCFN66eJ5w5XNomaK2XD+TuCroNTLFGeZ+WCmBMcBDyTFKou3P6cR6J/QsaqDp7fGQ==",
+      "sha512": "WbP0+Lgmn+nvHHt0VQnz8RXZ+UEz0cfpzX7IJLeMeaCWF7nGyrfohLIJMrKaaeY0rgkGH8HUAyN6mFB1kswBdg==",
       "type": "package",
       "path": "system.runtime.interopservices/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11385,7 +11329,7 @@
       ]
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
-      "sha512": "cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
+      "sha512": "k4YO3H1GZ/tlm/gdk7ZilgEjfJklOuum2jzx+b2V/16AEpURoxTFqNS82lk8geQMRo/JwSGpu8Gq05LX1HCskA==",
       "type": "package",
       "path": "system.runtime.interopservices.runtimeinformation/4.3.0",
       "files": [
@@ -11419,12 +11363,11 @@
       ]
     },
     "System.Runtime.Numerics/4.3.0": {
-      "sha512": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
+      "sha512": "zr6S65alD1kHq5hOF/LpiYGldRwJleoAhxwwN7APj3Xw2SKOCKXHBYEIGdTUoFPKx/XB5IRB01UvA5r/08ikRw==",
       "type": "package",
       "path": "system.runtime.numerics/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11476,7 +11419,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "aEcolLx69Dn3rE0LzKSmKZLKZpGPOgSHh6QFZw8Hb2qNAtL5vU4ummqzdSM7L5kSGaxpnxkg/N0dZo6LNCwkLA==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -11661,7 +11604,7 @@
       ]
     },
     "System.Security.Claims/4.3.0": {
-      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
+      "sha512": "0tLs/2F2cmmqcOFketY+3grvuYHi315uI8DszZ2aT9XsQ9z+Dyeb8rxoSjRSCLFwshhRifADP50UKwp2Qk7zvQ==",
       "type": "package",
       "path": "system.security.claims/4.3.0",
       "files": [
@@ -11699,7 +11642,7 @@
       ]
     },
     "System.Security.Cryptography.Algorithms/4.3.0": {
-      "sha512": "W1kd2Y8mYSCgc3ULTAZ0hOP2dSdG5YauTb1089T0/kRcN2MpSAW1izOFROrJgxSlMn3ArsgHXagigyi+ibhevg==",
+      "sha512": "J+LDcGuQVEoJw+Q17xopG3mvCjNL+yqUZkIyqEs5w7v5gh3ehVoQhWPeR4ihh8Acg7+bBXUHpc7auzDkcEZy3g==",
       "type": "package",
       "path": "system.security.cryptography.algorithms/4.3.0",
       "files": [
@@ -11802,7 +11745,7 @@
       ]
     },
     "System.Security.Cryptography.Csp/4.3.0": {
-      "sha512": "X4s/FCkEUnRGnwR3aSfVIkldBmtURMhmexALNTwpjklzxWU7yjMk7GHLKOZTNkgnWnE0q7+BCf9N2LVRWxewaA==",
+      "sha512": "tD1UkG17sv5YoKzYfpB3V7UzRItt/2Qri7aucpgmPBXKIkkVIaBNKc4SXhqnWmLuHu4J36kROtvxzohTRq/lUA==",
       "type": "package",
       "path": "system.security.cryptography.csp/4.3.0",
       "files": [
@@ -11833,7 +11776,7 @@
       ]
     },
     "System.Security.Cryptography.Encoding/4.3.0": {
-      "sha512": "1DEWjZZly9ae9C79vFwqaO5kaOlI5q+3/55ohmq/7dpDyDfc8lYe7YVxJUZ5MF/NtbkRjwFRo14yM4OEo9EmDw==",
+      "sha512": "yA/luy+sY8APmsk8TDyTtRLszh2x/ntmL1yokAgIBct4jfQQt2NWaT4X7vFHIVS/uojAwVpFQ8qaik3AaeCZbw==",
       "type": "package",
       "path": "system.security.cryptography.encoding/4.3.0",
       "files": [
@@ -11873,7 +11816,7 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
+      "sha512": "JukRylg3OvlXfC/kTiijKqdguaANAHkOIdCLcZCMVGgQI8tJ+EI9ucJTyRhJdyOAmjuq5vHb3Bj1Z5lat+HfwQ==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -11921,7 +11864,7 @@
       ]
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
-      "sha512": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
+      "sha512": "PeZQ7tNhUTU8wGXKcTfi1xS18HM5bhE4zcLvgGcBQEuOySUtNcsiKoKHZlguNL+wj8rBroLkdDL8Hmap/TFNQw==",
       "type": "package",
       "path": "system.security.cryptography.primitives/4.3.0",
       "files": [
@@ -11949,7 +11892,7 @@
       ]
     },
     "System.Security.Cryptography.X509Certificates/4.3.0": {
-      "sha512": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
+      "sha512": "ZgEutvx41CWtrGwdlvGZyTAFoBb/KgyJ1uPsJvmprSxSBUIaD5Dc1BfKMmM9864EBZiFoV2j0oyONFGsCatWMw==",
       "type": "package",
       "path": "system.security.cryptography.x509certificates/4.3.0",
       "files": [
@@ -12046,12 +11989,11 @@
       ]
     },
     "System.Security.Principal/4.3.0": {
-      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "sha512": "zWXO90K+MQDSpeyOBC4elXIAhFX3twv2u9GW145c5OtVIkI0Bmv85GYib//ghJI54Tr03iEb65rsA7C3ZbT5bg==",
       "type": "package",
       "path": "system.security.principal/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12148,12 +12090,11 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "sha512": "317J6r9ECvPuXs8e8jY1SkPLtdWyKAEmbAhkFSaZuyHetNWX+wTUQunhx3i3J/Mxi67T0kDyHOPNiCfnQP5mvA==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12264,12 +12205,11 @@
       ]
     },
     "System.Text.Encoding.Extensions/4.3.0": {
-      "sha512": "YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
+      "sha512": "JYBDtr6RPIvWsEjXy/uS7lSV3K1cF5TYyofjOYO9JD80xzrBW6pMRoUQeU0CXRiaQoHZAkfSfsHDPiMbhEKEKA==",
       "type": "package",
       "path": "system.text.encoding.extensions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12351,12 +12291,11 @@
       ]
     },
     "System.Text.RegularExpressions/4.3.0": {
-      "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
+      "sha512": "MPZyLXyQjMish6ttpzyYX3DFch67AEIZa2vbdc9JtrgW1wT/wZDhPe7P8ksQ10kLD21VtZDwpzicS07f7hoQ9w==",
       "type": "package",
       "path": "system.text.regularexpressions/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12435,12 +12374,11 @@
       ]
     },
     "System.Threading/4.3.0": {
-      "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
+      "sha512": "33lZKRntyaH9Pr1AaJRuYlq6h6jG+ZAW1Iu+HzJ4kcjgwk3qGP0cs2VnW1/JWl2IAgetnHQ8i5u7+Kd7sQ1oCA==",
       "type": "package",
       "path": "system.threading/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12527,12 +12465,11 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "sha512": "PSz938S6Q2f+6mccMHe1aIKl+4KgVgVcWodZlWrLt2eOg0Ad+YNQLQnLCAu6g4wfgaF0sEw6tcDv7b2dtu6hVA==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12634,7 +12571,7 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
+      "sha512": "hYPchYcGJ0ovW+hixXLnzTLy11Lb2GbF4e6r7TzTvyBcqZmWJh/BFndSgpWHIZB+ImPZS2QdNobnutmlJII33w==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
@@ -12690,7 +12627,7 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "sha512": "0LmMcRDJmnKAxmL0yPl1RTN0F74ccFHIKwuIKl9SSHo4qokvH8BRliR1v2NN7f1NzOgrb3hDqm+/80wVqXyYQw==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
@@ -12773,12 +12710,11 @@
       ]
     },
     "System.Xml.ReaderWriter/4.3.0": {
-      "sha512": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
+      "sha512": "8jo8D/GUUSnW4J1S5R7OtseomZwGBCsqHNL8gw+i1bNbaop1+3BAZQjsaXB/1V/jQjWNBL1qbI+JcUnsApuimg==",
       "type": "package",
       "path": "system.xml.readerwriter/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12845,12 +12781,11 @@
       ]
     },
     "System.Xml.XDocument/4.3.0": {
-      "sha512": "5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
+      "sha512": "kJSIWVof/pKB2PEkjoumVQer5Tmyapdy33Ub+sJU1GGi+6Am/aokXPnH1/fYv5Xfud9eGAWiLVvOHQm0UcfYpQ==",
       "type": "package",
       "path": "system.xml.xdocument/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12915,7 +12850,7 @@
       ]
     },
     "System.Xml.XmlDocument/4.3.0": {
-      "sha512": "lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
+      "sha512": "WsUgPLROwhjQF7y9UBf39ONZeJ9GuDSQ1naVv2u7OPvFUDV0aYlZi7uVLw2byh9tLn8EDr6rjyQVwRDLkICLHQ==",
       "type": "package",
       "path": "system.xml.xmldocument/4.3.0",
       "files": [
@@ -13106,28 +13041,27 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
-      "NpgSql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 2.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\": {},
+    "C:\\Users\\nikit\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
+      "projectUniqueName": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
       "projectName": "suncity.web",
-      "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
-      "packagesPath": "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\obj\\",
+      "projectPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
+      "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+      "outputPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andrei_Fedotov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13171,10 +13105,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.2.3, )"
-          },
-          "NpgSql.EntityFrameworkCore.PostgreSQL.Design": {
-            "target": "Package",
-            "version": "[1.1.1, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
