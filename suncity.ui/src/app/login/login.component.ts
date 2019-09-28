@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
 import { JwtService } from '../services/jwt.service';
+import { LoginDto } from '../models/loginDto';
 
 @Component({
     templateUrl: './login.component.html',
@@ -46,7 +47,11 @@ export class LoginComponent implements OnInit {
         }
 
         this.loading = true;
-        this.jwtService.login(this.f.username.value, this.f.password.value)
+        const loginDto: LoginDto = {
+            email: this.f.username.value,
+            password: this.f.password.value
+        }
+        this.jwtService.login(loginDto)
             .pipe(first())
             .subscribe(_ => this.router.navigate(['/']))
     }

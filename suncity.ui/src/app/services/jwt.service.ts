@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
 import { tap } from 'rxjs/operators';
+import { LoginDto } from '../models/loginDto';
+import { RegisterDto } from '../models/registerDto';
 
 @Injectable({
     providedIn: 'root'
@@ -9,25 +11,31 @@ import { tap } from 'rxjs/operators';
 export class JwtService {
     constructor(private httpClient: HttpClient) { }
 
-    login(username: string, password: string) {
+    login(loginDto: LoginDto) {
+        const payload = {
+            email: loginDto.email,
+            password: loginDto.password
+        };
         return this.httpClient
             .post(
-                environment.authRequest, { username, password }, {responseType: 'text'})
-            .pipe(tap((res: string) => localStorage.setItem('access_token', res)))
+                environment.authRequest, payload)
+            .pipe(tap((res: any) => {
+                localStorage.setItem('token', res.token);
+            }));
     }
 
-    register(email: string, password: string) {
-        return this.httpClient.post<{ access_token: string }>('http://www.your-server.com/auth/register', { email, password }).pipe(tap(res => {
-            this.login(email, password)
-        }))
+    register(data: RegisterDto) {
+        return this.httpClient.post(environment.register, data).pipe(tap(res => {
+            console.log('register res: ' + res);
+        }));
     }
 
     logout() {
-        localStorage.removeItem('access_token');
+        localStorage.removeItem('token');
     }
 
     public get loggedIn(): boolean {
         console.log('QQQ');
-        return localStorage.getItem('access_token') !== null;
+        return localStorage.getItem('token') !== null;
     }
 }

@@ -1,5 +1,5 @@
 using System;
-using suncity.web.Models.User;
+//using suncity.web.Models.User;
 
 namespace Suncity.Web.Models
 {
@@ -7,8 +7,8 @@ namespace Suncity.Web.Models
     {
         public long Id { get; set; }
         public DateTime Date { get; set; }
-        public SunCityUser Child { get; set; }
-        public SunCityUser Mentor { get; set; }
+        //public SunCityUser Child { get; set; }
+        //public SunCityUser Mentor { get; set; }
         public bool Status { get; set; }
         public int Duration { get; set; }
 

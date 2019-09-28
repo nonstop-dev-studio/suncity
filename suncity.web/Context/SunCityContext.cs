@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using suncity.web.Models.User;
+using suncity.web.Models;
+//using suncity.web.Models.User;
 using Suncity.Web.Models;
 
 namespace Suncity.Web.Context
 {
-    public class SuncityContext : DbContext
+    public class SuncityContext : IdentityDbContext<User>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -18,6 +21,8 @@ namespace Suncity.Web.Context
 
         public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<SunCityUser> Users { get; set; }
+        public DbSet<User> Users { get; set; }
+        //public DbSet<IdentityRole> IdentityRole { get; set; }
+        //public DbSet<IdentityUserRole<string>> IdentityUserRole { get; set; }
     }
 }
