@@ -1,0 +1,17 @@
+<section class="content">
+        <section class="headerText">Отчеты</section>
+        <div class="addReportButton"><a routerLink="/report/add"><button mat-raised-button>Добавить отчет</button></a></div>
+        <table class="tableReport">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+                <!-- Position Column -->
+                <tr>
+                    <th>Дата<tr *ngFor="let rep of report"> {{rep.date}} </tr></th>
+                    <th>Ребенок<tr *ngFor="let rep of report"> {{rep.child}} </tr></th>
+                    <th>Наставник<tr *ngFor="let rep of report"> {{rep.mentor}} </tr></th>
+                    <th>Статус<tr *ngFor="let rep of report"> {{rep.status}} </tr></th>
+                </tr>
+              </table>
+    </section>

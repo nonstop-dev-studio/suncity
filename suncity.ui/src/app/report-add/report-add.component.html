@@ -1,0 +1,88 @@
+<section class="content">
+        <section class="headerText">Отчет</section>
+        <div class="inputDate">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput  formControlName="date"  placeholder="Дата">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+                <mat-form-field>
+                <input matInput formControlName="child" placeholder="Ребенок" >
+                </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+             <mat-form-field>
+            <input matInput formControlName="duration" placeholder="Продолжительность">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="whatDidYouPlanToDoAtTheMeeting" placeholder="Чем планировали заниматься на встрече?">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="whatDidYouEndUpDoing" placeholder="Чем в итоге занимались?">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="assessTheMoodOfTheChildBeforeAndAfterTheMeeting" placeholder="Оцените настроение ребенка до и после встречи">    
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="targetForNextMeeting" placeholder="Цель на следующую встречу">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="describeYourMoodAfterTheMeeting" placeholder="Опишите свое настроение после встречи">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="additionalComment"  placeholder="Дополнительные комментарии">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="Questions" placeholder="Вопросы">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="inputButton">
+            <section>
+            <button mat-raised-button (click)="postReport()">Отправить</button>
+        </section>
+            </div>
+        </form>
+        </div>
+    </section>

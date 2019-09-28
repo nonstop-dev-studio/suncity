@@ -14,7 +14,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { JwtService } from './services/jwt.service';
 import { AccountComponent } from './toolbar/account/account.component';
+import { ReportComponent } from './report/report.component';
 import { SignupComponent } from './signup/signup.component';
+import { ReportAddComponent } from './report-add/report-add.component';
+import { QuestionnaireShowComponent } from './questionnaire-show/questionnaire-show.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { SignupComponent } from './signup/signup.component';
     LoginComponent,
     ChatComponent,
     FaqComponent,
-    SignupComponent
+    ReportComponent,
+    SignupComponent,
+    ReportAddComponent,
+    QuestionnaireShowComponent,
   ],
   imports: [
     BrowserModule,

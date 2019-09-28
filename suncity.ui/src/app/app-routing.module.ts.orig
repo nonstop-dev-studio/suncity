@@ -1,24 +1,32 @@
 import { Routes, RouterModule } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { ModuleWithProviders } from '@angular/core';
-<<<<<<< HEAD
 import { QuestionnaireComponent } from '../app/questionnaire/questionnaire.component';
+import { LoginComponent } from './login/login.component';
+import { AccountComponent } from './toolbar/account/account.component';
 import { ChatComponent } from '../app/chat/chat.component';
 import { FaqComponent } from '../app/faq/faq.component';
+<<<<<<< HEAD
+import { ReportComponent } from '../app/report/report.component';
+import { ReportAddComponent } from '../app/report-add/report-add.component';
+=======
+import { SignupComponent } from './signup/signup.component';
+>>>>>>> 8acf045792a7297b8ba5b7e16bc1b5919c18811c
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'questionnaire', component: QuestionnaireComponent },
   { path: 'chat', component: ChatComponent },
-  { path: 'faq', component: FaqComponent },
-=======
-import { LoginComponent } from './login/login.component';
-
-const routes: Routes = [
-  { path: '', component: MainComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: '' }
->>>>>>> 77143ecb1f82c7dfc627b049f9858641fe700ddb
+  { path: 'account', component: AccountComponent },
+  { path: 'faq', component: FaqComponent },
+<<<<<<< HEAD
+  { path: 'report', component: ReportComponent },
+  { path: 'report/add', component: ReportAddComponent },
+=======
+  { path: 'signup', component: SignupComponent },
+>>>>>>> 8acf045792a7297b8ba5b7e16bc1b5919c18811c
+  { path: '**', redirectTo: '' },
 ];
 export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);
 
