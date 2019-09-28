@@ -50,8 +50,10 @@ export class QuestionnaireComponent implements OnInit {
       phoneNumber: this.f.phoneNumber.value,
       email: this.f.email.value,
     }
-    this.sub.add(
-      this.JwtService.postQuestionnaire(questionnaire).subscribe(d => console.log(d)));
+    if(questionnaire.name !== "" ) {
+      this.sub.add(this.JwtService.postQuestionnaire(questionnaire).subscribe(d => console.log(d)));
+      window.alert("Успешно отправилось"); }
+      else{ window.alert("Есть пустые поля. Анкета не отправлена."); }
   }
   onSubmit() {
     // TODO: Use EventEmitter with form value

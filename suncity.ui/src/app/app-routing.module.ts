@@ -11,8 +11,9 @@ const routes: Routes = [
   { path: 'questionnaire', component: QuestionnaireComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: '' },
   { path: 'faq', component: FaqComponent },
+  { path: '**', redirectTo: '' },
+
 ];
 export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);
 
