@@ -17,6 +17,7 @@ import { AccountComponent } from './toolbar/account/account.component';
 import { ReportComponent } from './report/report.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReportAddComponent } from './report-add/report-add.component';
+import { QuestionnaireShowComponent } from './questionnaire-show/questionnaire-show.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ReportAddComponent } from './report-add/report-add.component';
     ReportComponent,
     SignupComponent,
     ReportAddComponent,
+    QuestionnaireShowComponent,
   ],
   imports: [
     BrowserModule,

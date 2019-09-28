@@ -53,5 +53,9 @@ export class JwtService {
    getReport(): Observable<Report[]> {
        return <Observable<Report[]>>
     this.httpClient.get(environment.getReport);
-}
+    }
+    getQuestionnaire(): Observable<Questionnaire[]> {
+        return <Observable<Questionnaire[]>>
+     this.httpClient.get(environment.getQuestionnaire);
+ }
 }

@@ -1,0 +1,22 @@
+<section class="content">
+        <section class="headerText">Анкеты</section>
+        <table class="tableReport">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+                <!-- Position Column -->
+                <tr>
+                    <th>Имя<tr *ngFor="let que of questionnaire"> {{que.name}} </tr></th>
+                    <th>Фамилия<tr *ngFor="let que of questionnaire"> {{que.surname}} </tr></th>
+                    <th>Отчетство<tr *ngFor="let que of questionnaire"> {{que.middleName}} </tr></th>
+                    <th>Дата рождения<tr *ngFor="let que of questionnaire"> {{que.birthDate}} </tr></th>
+                    <th>Город<tr *ngFor="let que of questionnaire"> {{que.city}} </tr></th>
+                    <th>Гражданство<tr *ngFor="let que of questionnaire"> {{que.isRussianCitizenship}} </tr></th>
+                    <th>Адрес регистрации<tr *ngFor="let que of questionnaire"> {{que.addressResidence}} </tr></th>
+                    <th>Адрес проживания<tr *ngFor="let que of questionnaire"> {{que.addressRegistration}} </tr></th>
+                    <th>Номер телефон<tr *ngFor="let que of questionnaire"> {{que.phoneNumber}} </tr></th>
+                    <th>Email<tr *ngFor="let que of questionnaire"> {{que.email}} </tr></th>
+                </tr>
+              </table>
+    </section>
