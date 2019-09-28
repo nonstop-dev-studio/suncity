@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {}
+    "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj": {}
   },
   "projects": {
-    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {
+    "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
+        "projectUniqueName": "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj",
         "projectName": "suncity.web",
-        "projectPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
-        "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\obj\\",
+        "projectPath": "D:\\VKHack\\SunCity\\suncity.web\\suncity.web.csproj",
+        "packagesPath": "C:\\Users\\Vadim\\.nuget\\packages\\",
+        "outputPath": "D:\\VKHack\\SunCity\\suncity.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vadim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,13 +62,10 @@
               "target": "Package",
               "version": "[2.2.3, )"
             },
-<<<<<<< Updated upstream
             "NpgSql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
               "version": "[1.1.1, )"
             },
-=======
->>>>>>> Stashed changes
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[2.2.0, )"

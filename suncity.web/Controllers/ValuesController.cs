@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 
-namespace suncity.web.Controllers
+namespace Suncity.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

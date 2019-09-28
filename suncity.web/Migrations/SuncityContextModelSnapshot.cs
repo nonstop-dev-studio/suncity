@@ -16,7 +16,7 @@ namespace suncity.web.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
+                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -24,49 +24,25 @@ namespace suncity.web.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ConcurrencyStamp")
-                        .IsConcurrencyToken();
+                    b.Property<string>("AddressRegistration");
 
-                    b.Property<string>("Name")
-                        .HasMaxLength(256);
+                    b.Property<string>("AddressResidence");
 
-                    b.Property<string>("NormalizedName")
-                        .HasMaxLength(256);
+                    b.Property<string>("BirthDate");
 
-                    b.HasKey("Id");
+                    b.Property<string>("City");
 
-                    b.HasIndex("NormalizedName")
-                        .IsUnique()
-                        .HasName("RoleNameIndex");
+                    b.Property<string>("Email");
 
-                    b.ToTable("AspNetRoles");
-                });
+                    b.Property<string>("IsRussianCitizenship");
 
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                    b.Property<string>("MiddleName");
 
-                    b.Property<string>("ClaimType");
+                    b.Property<string>("Name");
 
-                    b.Property<string>("ClaimValue");
+                    b.Property<string>("PhoneNumber");
 
-                    b.Property<string>("RoleId")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetRoleClaims");
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("ClaimType");
+                    b.Property<string>("Surname");
 
                     b.Property<string>("ClaimValue");
 
@@ -131,29 +107,29 @@ namespace suncity.web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("AddressRegistrationId");
+                    b.Property<string>("AddressRegistration");
 
-                    b.Property<int?>("AddressResidenceId");
+                    b.Property<string>("AddressResidence");
 
-                    b.Property<bool>("AgreedToMakeReports");
+                    b.Property<string>("BirthDate");
 
-                    b.Property<bool>("AgreedToShareMedia");
+                    b.Property<string>("City");
 
-                    b.Property<bool>("AgreedWithLiabilities");
+                    b.Property<string>("Email");
 
-                    b.Property<bool>("ConsentProcessingPersonalData");
+                    b.Property<string>("IsRussianCitizenship");
 
-                    b.Property<bool>("IsRussianCitizenship");
+                    b.Property<string>("MiddleName");
 
-                    b.Property<string>("ProgrammInformationSource");
+                    b.Property<string>("Name");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<string>("Surname");
 
                     b.Property<Guid>("UserId");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AddressRegistrationId");
-
-                    b.HasIndex("AddressResidenceId");
 
                     b.ToTable("Questionnaires");
                 });
@@ -313,7 +289,7 @@ namespace suncity.web.Migrations
 
                     b.HasOne("suncity.web.Models.Address", "AddressResidence")
                         .WithMany()
-                        .HasForeignKey("AddressResidenceId");
+                        .HasForeignKey("MentorId");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,10 +1,12 @@
 ﻿using System.Text;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http.Connections;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using suncity.web.Chat;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -12,6 +14,7 @@ using Microsoft.IdentityModel.Tokens;
 using Suncity.Web.Context;
 using suncity.web.Models;
 using suncity.web.Services;
+using System;
 
 namespace suncity.web
 {
@@ -74,6 +77,11 @@ namespace suncity.web
 
             //services.AddScoped<IAuthenticateService, TokenAuthenticationService>();
             //services.AddScoped<IUserManagementService, UserManagementService>();
+            services.AddSignalR(hubOptions =>
+            {
+                hubOptions.EnableDetailedErrors = true;
+                hubOptions.KeepAliveInterval = TimeSpan.FromMinutes(1);
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -91,6 +99,14 @@ namespace suncity.web
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/chat");
+            });
         }
     }
 }

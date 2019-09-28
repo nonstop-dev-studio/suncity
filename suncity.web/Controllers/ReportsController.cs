@@ -5,7 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Suncity.Web.Context;
 using Suncity.Web.Models;
 
-namespace suncity.web.Controllers {
+namespace Suncity.Web.Controllers
+{
     [Route ("api/[controller]")]
     [ApiController]
     public class ReportsController : ControllerBase {

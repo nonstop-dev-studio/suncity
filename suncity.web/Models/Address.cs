@@ -1,4 +1,4 @@
-﻿namespace suncity.web.Models
+﻿namespace Suncity.Web.Models
 {
     public class Address
     {
