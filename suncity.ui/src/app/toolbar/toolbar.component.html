@@ -1,5 +1,16 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="white">
     <span>Наставники</span>
+    <div class="navigation">
+        <div class="item"><a routerLink=""><button mat-button>Главная</button></a></div>
+        <div class="item"><a routerLink="/questionnaire"><button mat-button>Анкета</button></a></div>
+        <div class="item"><a routerLink="/chat"><button mat-button>Чат</button></a></div>
+        <div class="item"><a routerLink="/faq"><button mat-button>Часто задаваемые вопросы</button></a></div>
+    </div>
     <span class="Toolbar-spacer"></span>
-    <button mat-button>Войти</button>
+    <ng-container *ngIf="!isLoggedIn">
+        <button mat-button (click)="login()">Войти</button>
+    </ng-container>
+    <ng-container *ngIf="isLoggedIn">
+        <button mat-button (click)="account()">Кабинет</button>
+    </ng-container>
 </mat-toolbar>

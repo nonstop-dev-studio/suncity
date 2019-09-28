@@ -19,6 +19,113 @@ namespace suncity.web.Migrations
                 .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256);
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasName("RoleNameIndex");
+
+                    b.ToTable("AspNetRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ClaimType");
+
+                    b.Property<string>("ClaimValue");
+
+                    b.Property<string>("UserId")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("ProviderKey");
+
+                    b.Property<string>("ProviderDisplayName");
+
+                    b.Property<string>("UserId")
+                        .IsRequired();
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId");
+
+                    b.Property<string>("RoleId");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId");
+
+                    b.Property<string>("LoginProvider");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Value");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
             modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
                 {
                     b.Property<Guid>("Id")
@@ -36,15 +143,7 @@ namespace suncity.web.Migrations
 
                     b.Property<bool>("ConsentProcessingPersonalData");
 
-                    b.Property<int?>("ContactsId");
-
-                    b.Property<Guid?>("EmploymentId");
-
-                    b.Property<string>("Hobbies");
-
                     b.Property<bool>("IsRussianCitizenship");
-
-                    b.Property<string>("MaritalStatusState");
 
                     b.Property<string>("ProgrammInformationSource");
 
@@ -55,12 +154,6 @@ namespace suncity.web.Migrations
                     b.HasIndex("AddressRegistrationId");
 
                     b.HasIndex("AddressResidenceId");
-
-                    b.HasIndex("ContactsId");
-
-                    b.HasIndex("EmploymentId");
-
-                    b.HasIndex("MaritalStatusState");
 
                     b.ToTable("Questionnaires");
                 });
@@ -74,15 +167,11 @@ namespace suncity.web.Migrations
 
                     b.Property<string>("AssessTheMoodOfTheChildBeforeAndAfterTheMeeting");
 
-                    b.Property<Guid?>("ChildId");
-
                     b.Property<DateTime>("Date");
 
                     b.Property<string>("DescribeYourMoodAfterTheMeeting");
 
                     b.Property<int>("Duration");
-
-                    b.Property<Guid?>("MentorId");
 
                     b.Property<string>("Questions");
 
@@ -95,10 +184,6 @@ namespace suncity.web.Migrations
                     b.Property<string>("WhatDidYouPlanToDoAtTheMeeting");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ChildId");
-
-                    b.HasIndex("MentorId");
 
                     b.ToTable("Reports");
                 });
@@ -121,94 +206,103 @@ namespace suncity.web.Migrations
                     b.ToTable("Address");
                 });
 
-            modelBuilder.Entity("suncity.web.Models.User.Contacts", b =>
+            modelBuilder.Entity("suncity.web.Models.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Email");
+                    b.Property<int>("AccessFailedCount");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken();
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256);
+
+                    b.Property<bool>("EmailConfirmed");
+
+                    b.Property<string>("FirstName");
+
+                    b.Property<string>("LastName");
+
+                    b.Property<bool>("LockoutEnabled");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256);
+
+                    b.Property<string>("PasswordHash");
 
                     b.Property<string>("PhoneNumber");
 
-                    b.HasKey("Id");
+                    b.Property<bool>("PhoneNumberConfirmed");
 
-                    b.ToTable("Contacts");
-                });
+                    b.Property<string>("SecurityStamp");
 
-            modelBuilder.Entity("suncity.web.Models.User.Education", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                    b.Property<bool>("TwoFactorEnabled");
 
-                    b.Property<int>("EducationLevel");
-
-                    b.Property<string>("EducationalInstitution");
-
-                    b.Property<Guid?>("QuestionnaireId");
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256);
 
                     b.HasKey("Id");
 
-                    b.HasIndex("QuestionnaireId");
+                    b.HasIndex("NormalizedEmail")
+                        .HasName("EmailIndex");
 
-                    b.ToTable("Education");
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasName("UserNameIndex");
+
+                    b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("suncity.web.Models.User.Employment", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("CompanyName");
-
-                    b.Property<string>("CompanyPhoneNumber");
-
-                    b.Property<string>("Position");
-
-                    b.Property<string>("Responsibilities");
-
-                    b.Property<string>("WorkSchedule");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Employment");
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("suncity.web.Models.User.MaritalStatus", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.Property<string>("State")
-                        .ValueGeneratedOnAdd();
-
-                    b.HasKey("State");
-
-                    b.ToTable("MaritalStatus");
+                    b.HasOne("suncity.web.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("suncity.web.Models.User.SunCityUser", b =>
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                    b.HasOne("suncity.web.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
 
-                    b.Property<DateTime>("BirthDate");
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
-                    b.Property<string>("Email");
+                    b.HasOne("suncity.web.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
 
-                    b.Property<DateTime>("LastLogon");
-
-                    b.Property<string>("MiddleName");
-
-                    b.Property<string>("Name");
-
-                    b.Property<string>("PhoneNumber");
-
-                    b.Property<DateTime>("Registered");
-
-                    b.Property<string>("Surname");
-
-                    b.Property<string>("UserName");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("suncity.web.Models.User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
@@ -220,36 +314,6 @@ namespace suncity.web.Migrations
                     b.HasOne("suncity.web.Models.Address", "AddressResidence")
                         .WithMany()
                         .HasForeignKey("AddressResidenceId");
-
-                    b.HasOne("suncity.web.Models.User.Contacts", "Contacts")
-                        .WithMany()
-                        .HasForeignKey("ContactsId");
-
-                    b.HasOne("suncity.web.Models.User.Employment", "Employment")
-                        .WithMany()
-                        .HasForeignKey("EmploymentId");
-
-                    b.HasOne("suncity.web.Models.User.MaritalStatus", "MaritalStatus")
-                        .WithMany()
-                        .HasForeignKey("MaritalStatusState");
-                });
-
-            modelBuilder.Entity("Suncity.Web.Models.Report", b =>
-                {
-                    b.HasOne("suncity.web.Models.User.SunCityUser", "Child")
-                        .WithMany()
-                        .HasForeignKey("ChildId");
-
-                    b.HasOne("suncity.web.Models.User.SunCityUser", "Mentor")
-                        .WithMany()
-                        .HasForeignKey("MentorId");
-                });
-
-            modelBuilder.Entity("suncity.web.Models.User.Education", b =>
-                {
-                    b.HasOne("Suncity.Web.Models.Questionnaire")
-                        .WithMany("Education")
-                        .HasForeignKey("QuestionnaireId");
                 });
 #pragma warning restore 612, 618
         }
