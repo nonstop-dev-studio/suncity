@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
 import { tap } from 'rxjs/operators';
-
+import {Questionnaire} from "src/app/models/questionnaire";
 @Injectable({
     providedIn: 'root'
 })
@@ -29,5 +29,8 @@ export class JwtService {
     public get loggedIn(): boolean {
         console.log('QQQ');
         return localStorage.getItem('access_token') !== null;
+    }
+    postQuestionnaire(questionnaire: Questionnaire) {
+         return this.httpClient.post(environment.postQuestionnaire,(questionnaire));
     }
 }
