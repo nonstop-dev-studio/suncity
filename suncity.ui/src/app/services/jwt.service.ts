@@ -4,10 +4,11 @@ import { environment } from 'src/environments/environment.prod';
 import { tap } from 'rxjs/operators';
 import { LoginDto } from '../models/loginDto';
 import { RegisterDto } from '../models/registerDto';
-
+import { Observable, throwError } from 'rxjs';
 import {Questionnaire} from "src/app/models/questionnaire";
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
+import { Report } from '../models/report';
 @Injectable({
     providedIn: 'root'
 })
@@ -46,4 +47,11 @@ export class JwtService {
     postQuestionnaire(questionnaire: Questionnaire) {
          return this.httpClient.post(environment.postQuestionnaire,(questionnaire));
     }
+    postReport(report: Report) {
+        return this.httpClient.post(environment.postReport,(report));
+   }
+   getReport(): Observable<Report[]> {
+       return <Observable<Report[]>>
+    this.httpClient.get(environment.getReport);
+}
 }

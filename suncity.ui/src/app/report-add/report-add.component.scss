@@ -12,7 +12,7 @@
     color: #000000;
   }
 .inputDate{
-    margin-left: 30%;
+    margin-left: 10%;
     margin-top: 220px;
 }
 .item{
@@ -21,3 +21,10 @@
 .inputButton{
     margin-left: 25%;
 }
+.SignupContainerSection {
+      position: relative;
+      width: 100%;
+}
+mat-form-field {
+    width: 70%;
+  }

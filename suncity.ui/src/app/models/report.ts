@@ -1,4 +1,4 @@
-export interface Questionnaire {
+export interface Report {
 date: string,
 child: string,
 mentor: string,
@@ -8,7 +8,7 @@ whatDidYouPlanToDoAtTheMeeting: string,
 whatDidYouEndUpDoing: string,
 assessTheMoodOfTheChildBeforeAndAfterTheMeeting: string,
 targetForNextMeeting: string,
-DescribeYourMoodAfterTheMeeting: string,
+describeYourMoodAfterTheMeeting: string,
 additionalComment: string,
 Questions: string
 }

@@ -30,8 +30,8 @@ import { ReportAddComponent } from './report-add/report-add.component';
     ChatComponent,
     FaqComponent,
     ReportComponent,
-    SignupComponent
-    ReportAddComponent
+    SignupComponent,
+    ReportAddComponent,
   ],
   imports: [
     BrowserModule,

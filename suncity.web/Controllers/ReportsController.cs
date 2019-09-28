@@ -38,9 +38,16 @@ namespace Suncity.Web.Controllers
         // POST: api/reports
         [HttpPost]
         public async Task < ActionResult < Report>> PostReport(Report report) {
-            _context.Reports.Add (report);
+            if (User.Identity.Name != null)
+            {
+                report.Mentor = User.Identity.Name;
+                _context.Reports.Add(report);
+            }
+            else
+            {
+                report.Mentor = "Неизвестный";
+            }
             await _context.SaveChangesAsync ();
-            var user = _context.Users.FirstOrDefault(u => u.AuthToken == Request.Headers[""]);
             return CreatedAtAction (nameof (GetReport), new { id = report.Id }, report);
         }
 
