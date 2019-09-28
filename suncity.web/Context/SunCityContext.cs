@@ -8,7 +8,6 @@ namespace Suncity.Web.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=NonStopVkHack;Username=postgres;Password=password");
         }
 
         public SuncityContext(DbContextOptions<SuncityContext> options) : base(options) { }
@@ -19,7 +18,6 @@ namespace Suncity.Web.Context
 
         public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<Questionnaire> Questionnaires { get; set; }
         public DbSet<SunCityUser> Users { get; set; }
     }
 }
