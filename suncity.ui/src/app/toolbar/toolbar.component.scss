@@ -3,4 +3,24 @@
       flex: 1 1 auto;
     }
   }
-  
+  A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+    color: black;
+    font-weight: 50;
+    font-size: 80%;
+   } 
+   A:hover { 
+    text-decoration: none; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: black;
+    font-weight: 50;
+    font-size: 80%;
+   } 
+   .item{
+    display:inline-block;
+    margin-left: 10%;
+     margin-right: 10%;
+   }
+   .navigation{
+     margin-left: 25%;
+     margin-right: 30%;
+   }
