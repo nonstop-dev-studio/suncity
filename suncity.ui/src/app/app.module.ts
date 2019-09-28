@@ -7,12 +7,18 @@ import { MainComponent } from './main/main.component';
 import { MaterialModule } from './common/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+import { ChatComponent } from './chat/chat.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    QuestionnaireComponent,
+    ChatComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
