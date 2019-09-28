@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtService } from '../services/jwt.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,12 +9,14 @@ import { JwtService } from '../services/jwt.service';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-  isLoggedIn;
+  get isLoggedIn() {
+    return localStorage.getItem('token') !== null;
+  }
 
   constructor(private router: Router, private jwtService: JwtService) { }
 
   ngOnInit() {
-    this.isLoggedIn = this.jwtService.loggedIn;
+    
   }
 
   login() {

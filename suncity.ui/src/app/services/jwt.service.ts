@@ -6,11 +6,13 @@ import { LoginDto } from '../models/loginDto';
 import { RegisterDto } from '../models/registerDto';
 
 import {Questionnaire} from "src/app/models/questionnaire";
+import { of } from 'rxjs';
+import { Router } from '@angular/router';
 @Injectable({
     providedIn: 'root'
 })
 export class JwtService {
-    constructor(private httpClient: HttpClient) { }
+    constructor(private httpClient: HttpClient, private router: Router) { }
 
     login(loginDto: LoginDto) {
         const payload = {
@@ -33,6 +35,8 @@ export class JwtService {
 
     logout() {
         localStorage.removeItem('token');
+        this.router.navigate(['']);
+        return of(null);
     }
 
     public get loggedIn(): boolean {

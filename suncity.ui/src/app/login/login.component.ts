@@ -53,6 +53,12 @@ export class LoginComponent implements OnInit {
         }
         this.jwtService.login(loginDto)
             .pipe(first())
-            .subscribe(_ => this.router.navigate(['/']))
+            .subscribe(_ => {
+                this.router.navigate(['/']);
+            })
+    }
+
+    onReg() {
+        this.router.navigate(['/signup']);
     }
 }
