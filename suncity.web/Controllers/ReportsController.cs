@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -39,7 +40,7 @@ namespace Suncity.Web.Controllers
         public async Task < ActionResult < Report>> PostReport(Report report) {
             _context.Reports.Add (report);
             await _context.SaveChangesAsync ();
-
+            var user = _context.Users.FirstOrDefault(u => u.AuthToken == Request.Headers[""]);
             return CreatedAtAction (nameof (GetReport), new { id = report.Id }, report);
         }
 

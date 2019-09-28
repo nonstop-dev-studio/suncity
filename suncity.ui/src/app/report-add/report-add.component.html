@@ -1,0 +1,88 @@
+<section class="content">
+        <section class="headerText">Анкета</section>
+        <div class="inputDate">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput  formControlName="surname"  placeholder="Фамилия" style="width: 500px;">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+                <mat-form-field>
+                <input matInput formControlName="name" placeholder="Имя" />
+                </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+             <mat-form-field>
+            <input matInput formControlName="middleName" placeholder="Отчество">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="birthDate" placeholder="Дата рождения">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="city" placeholder="Город">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="isRussianCitizenship" placeholder="Гражданство">    
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="addressRegistration" placeholder="Адрес регистрации">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="addressResidence" placeholder="Адрес проживания">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="phoneNumber"  placeholder="Номер телефона">
+            </mat-form-field>
+            </section>
+            </div>
+            <div class="item">
+            <section>
+            <mat-form-field>
+            <input matInput formControlName="email" placeholder="Emal">
+            </mat-form-field>
+            </section>
+            </div>
+
+            <div class="inputButton">
+            <section>
+            <button mat-raised-button (click)="getQuestionnaire()">Отправить</button>
+        </section>
+            </div>
+        </form>
+        </div>
+    </section>

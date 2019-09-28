@@ -14,6 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { JwtService } from './services/jwt.service';
 import { AccountComponent } from './toolbar/account/account.component';
+import { ReportComponent } from './report/report.component';
+import { ReportAddComponent } from './report-add/report-add.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { AccountComponent } from './toolbar/account/account.component';
     QuestionnaireComponent,
     LoginComponent,
     ChatComponent,
-    FaqComponent
+    FaqComponent,
+    ReportComponent,
+    ReportAddComponent
   ],
   imports: [
     BrowserModule,
