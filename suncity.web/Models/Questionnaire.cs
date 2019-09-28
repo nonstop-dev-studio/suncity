@@ -2,6 +2,7 @@
 //using suncity.web.Models.User;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Suncity.Web.Models
 {
@@ -16,6 +17,7 @@ namespace Suncity.Web.Models
         public string City { get; set; }
         public string IsRussianCitizenship { get; set; }
         public string AddressResidence { get; set; }
+        [ForeignKey("AddressRegistrationId")]
         public string AddressRegistration { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }

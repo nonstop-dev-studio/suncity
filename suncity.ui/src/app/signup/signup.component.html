@@ -1,32 +1,43 @@
 <section class="Signup-Container" [formGroup]="form">
     <section class="Signup-Container-Section">
         <mat-form-field>
+            <input matInput placeholder="E-mail" formControlName="email">
+        </mat-form-field>
+    </section>
+    <!-- <section class="Signup-Container-flexContainer"> -->
+    <section class="Signup-Container-Section">
+        <mat-form-field>
             <input matInput placeholder="Имя" formControlName="firstName">
         </mat-form-field>
     </section>
     <section class="Signup-Container-Section">
-        <mat-form-field>
+        <mat-form-field class="Signup-Container-flexContainer-innerBlock">
             <input matInput placeholder="Фамилия" formControlName="lastName">
         </mat-form-field>
     </section>
+    <!-- </section> -->
     <section class="Signup-Container-Section">
+
         <mat-form-field>
-            <input matInput placeholder="Фамилия" formControlName="email">
+            <mat-label>Роль</mat-label>
+            <mat-select formControlName="role" (selectionChange)="onRoleChange($event)">
+                <mat-option *ngFor="let role of roles" [value]="role.value">
+                    {{role.viewValue}}
+                </mat-option>
+            </mat-select>
         </mat-form-field>
     </section>
     <section class="Signup-Container-Section">
         <mat-form-field>
-            <input matInput placeholder="Фамилия" formControlName="role">
+            <input matInput type="password" placeholder="Пароль" formControlName="password">
         </mat-form-field>
     </section>
     <section class="Signup-Container-Section">
         <mat-form-field>
-            <input matInput placeholder="Фамилия" formControlName="password">
+            <input matInput type="password" placeholder="Подтвердите пароль" formControlName="confirmPassword">
         </mat-form-field>
     </section>
     <section class="Signup-Container-Section">
-        <mat-form-field>
-            <input matInput placeholder="Фамилия" formControlName="confirmPassword">
-        </mat-form-field>
+        <button class="submit-button" mat-raised-button (click)="signup()">Зарегистрироваться</button>
     </section>
 </section>
