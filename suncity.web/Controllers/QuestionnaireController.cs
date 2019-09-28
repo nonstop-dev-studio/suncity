@@ -41,12 +41,12 @@ namespace Suncity.Web.Controllers
 
         // POST: api/questionnaires
         [HttpPost]
-        public async Task<ActionResult<Questionnaire>> PostQuestionnaire(Questionnaire questionnaire)
+        public async Task<ActionResult<Questionnaire>> CreateQuestionnaire(Questionnaire questionnaire)
         {
             _context.Questionnaires.Add(questionnaire);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetQuestionnaire), new { id = questionnaire.Id }, questionnaire);
+            return CreatedAtAction(nameof(CreateQuestionnaire), new { id = questionnaire.Id }, questionnaire);
         }
 
         // PUT: api/questionnaires/5

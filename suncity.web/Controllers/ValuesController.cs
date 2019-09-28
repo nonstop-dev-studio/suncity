@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace suncity.web.Controllers
+namespace Suncity.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

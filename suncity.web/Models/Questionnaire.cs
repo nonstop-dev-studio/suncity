@@ -1,5 +1,4 @@
-﻿using suncity.web.Models;
-using suncity.web.Models.User;
+﻿using Suncity.Web.Models.User;
 using System;
 using System.Collections.Generic;
 

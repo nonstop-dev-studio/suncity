@@ -1,5 +1,5 @@
+using Suncity.Web.Models.User;
 using System;
-using suncity.web.Models.User;
 
 namespace Suncity.Web.Models
 {

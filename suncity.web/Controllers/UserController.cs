@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using suncity.web.Models.User;
 using Suncity.Web.Context;
+using Suncity.Web.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace suncity.web.Controllers
+namespace Suncity.Web.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

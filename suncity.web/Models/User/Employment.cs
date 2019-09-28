@@ -1,7 +1,7 @@
 ﻿using System;
 
-namespace suncity.web.Models.User
-{
+namespace Suncity.Web.Models.User
+{ 
     public class Employment
     {
         public Guid Id { get; set; }

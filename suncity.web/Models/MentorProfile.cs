@@ -1,6 +1,6 @@
-﻿using suncity.web.Models.User;
+﻿using Suncity.Web.Models.User;
 
-namespace suncity.web.Models
+namespace Suncity.Web.Models
 {
     public class MentorProfile
     {

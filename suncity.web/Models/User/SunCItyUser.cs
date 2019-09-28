@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace suncity.web.Models.User
+namespace Suncity.Web.Models.User
 {
     /// <summary>
     /// Sun city user

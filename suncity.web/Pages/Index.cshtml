@@ -1,0 +1,72 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Chat";
+    string UserName = ViewData["UserName"]?.ToString() ?? "Default user";
+}
+
+    <div id="inputForm">
+        <input type="text" placeholder="сообщение" id="message" />
+        <input type="text" placeholder="кому" id="receiver" />
+        <input type="button" id="sendBtn" value="Отправить" />
+    </div>
+<div id="chatroom"></div>
+
+<script src="lib/signalr/signalr.min.js"></script>
+
+<script>
+
+    const userName = "@UserName";
+
+    const hubConnection = new signalR.HubConnectionBuilder()
+        .withUrl("/chat")
+        .configureLogging(signalR.LogLevel.Trace)
+        .build();
+
+    hubConnection.serverTimeoutInMilliseconds = 1000 * 60 * 10;
+
+    // получение сообщения от сервера
+    hubConnection.on('Receive', function (nick, message, connectionId) {
+
+        console.log('Received message' + message + ' from ' + nick + ' ' + connectionId);
+
+        // создаем элемент <b> для имени идентификатора подключения
+        let userNameElem = document.createElement("b");
+        userNameElem.appendChild(document.createTextNode(connectionId + ": "));
+
+        // создает элемент <p> для сообщения пользователя
+        let elem = document.createElement("p");
+        elem.appendChild(userNameElem);
+        elem.appendChild(document.createTextNode(message));
+
+        var firstElem = document.getElementById("chatroom").firstChild;
+        document.getElementById("chatroom").insertBefore(elem, firstElem);
+
+    });
+
+    hubConnection.on('Notify', function (onlineUsers) {
+        debugger;
+
+        var keys = onlineUsers.map(o => o.key);
+        let userNames = keys.join(', ');
+        let updatedUsersList = 'Online users: ' + userNames;
+
+        // добавляет элемент для диагностического сообщения
+        let notifyElem = document.createElement("b");
+        notifyElem.appendChild(document.createTextNode(updatedUsersList));
+        let elem = document.createElement("p");
+        elem.appendChild(notifyElem);
+        var firstElem = document.getElementById("chatroom").firstChild;
+        document.getElementById("chatroom").insertBefore(elem, firstElem);
+    });
+
+    // отправка сообщения на сервер
+    document.getElementById("sendBtn").addEventListener("click", function (e) {
+        let message = document.getElementById("message").value;
+        document.getElementById("message").value = '';
+        let receiverId =  document.getElementById("receiver").value;
+        hubConnection.invoke('Send', userName, message, receiverId);
+    });
+
+    hubConnection.start();
+</script>
