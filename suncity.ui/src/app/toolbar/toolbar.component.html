@@ -7,5 +7,10 @@
         <div class="item"><a routerLink="/faq"><button mat-button>Часто задаваемые вопросы</button></a></div>
     </div>
     <span class="Toolbar-spacer"></span>
-    <button mat-button>Войти</button>
+    <ng-container *ngIf="!isLoggedIn">
+        <button mat-button (click)="login()">Войти</button>
+    </ng-container>
+    <ng-container *ngIf="isLoggedIn">
+        <button mat-button (click)="login()">Йоу</button>
+    </ng-container>
 </mat-toolbar>
