@@ -10,10 +10,13 @@ import { ReportComponent } from '../app/report/report.component';
 import { SignupComponent } from './signup/signup.component';
 import { ReportAddComponent } from '../app/report-add/report-add.component';
 import { QuestionnaireShowComponent } from '../app/questionnaire-show/questionnaire-show.component';
+import { AboutChatComponent } from '../app/about-chat/about-chat.component';
+import { ChatWithPsychologistComponent } from '../app/chat-with-psychologist/chat-with-psychologist.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'questionnaire', component: QuestionnaireComponent },
+  { path: 'dialog/:id', component: AboutChatComponent },
   { path: 'chat', component: ChatComponent },
   { path: 'login', component: LoginComponent },
   { path: 'account', component: AccountComponent },
@@ -22,6 +25,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'report/add', component: ReportAddComponent },
   { path: 'questionnaire/show', component: QuestionnaireShowComponent },
+  { path: 'chatwithpsychologist', component: ChatWithPsychologistComponent },
   { path: '**', redirectTo: '' },
 ];
 export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);

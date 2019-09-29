@@ -9,4 +9,5 @@ export interface Questionnaire {
     addressRegistration:  string,
     phoneNumber:  string,
     email:  string
+
 }

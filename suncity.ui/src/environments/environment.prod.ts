@@ -7,5 +7,9 @@ export const environment = {
   postQuestionnaire: apiUrl + 'questionnaires',
   getQuestionnaire: apiUrl + 'questionnaires',
   postReport: apiUrl + 'reports',
-  getReport: apiUrl + 'reports'
+  getReport: apiUrl + 'reports',
+  getDialog: apiUrl + 'dialog',
+  postDialog: apiUrl + 'dialog',
+  getMessage: apiUrl + 'message',
+  postMessage: apiUrl + 'message',
 };

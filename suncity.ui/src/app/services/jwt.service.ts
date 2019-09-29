@@ -9,6 +9,9 @@ import {Questionnaire} from "src/app/models/questionnaire";
 import { of } from 'rxjs';
 import { Router } from '@angular/router';
 import { Report } from '../models/report';
+import { getDialog } from '../models/dialog';
+import { postDialog } from '../models/dialog';
+import { Message } from '../models/message';
 @Injectable({
     providedIn: 'root'
 })
@@ -49,13 +52,27 @@ export class JwtService {
     }
     postReport(report: Report) {
         return this.httpClient.post(environment.postReport,(report));
-   }
-   getReport(): Observable<Report[]> {
+    }
+    getReport(): Observable<Report[]> {
        return <Observable<Report[]>>
     this.httpClient.get(environment.getReport);
     }
     getQuestionnaire(): Observable<Questionnaire[]> {
         return <Observable<Questionnaire[]>>
      this.httpClient.get(environment.getQuestionnaire);
- }
+    }
+    postDialog(dialog: postDialog) {
+        return this.httpClient.post(environment.postDialog,(dialog));
+    }
+    getDialog(): Observable<getDialog[]> {
+    return <Observable<getDialog[]>>
+    this.httpClient.get(environment.getDialog);
+    }
+    getMessage(key: string): Observable<Message[]> {
+    return <Observable<Message[]>>
+    this.httpClient.get(environment.getMessage);
+    }
+    postMessage(message: Message) {
+        return this.httpClient.post(environment.postMessage,(message));
+    }
 }

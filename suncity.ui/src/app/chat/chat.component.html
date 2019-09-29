@@ -1,1 +1,21 @@
-<p>chat works!</p>
+<section class="content">
+    <section class="headerText">обсуждения</section>
+    <div class="addReportButton">
+        <form [formGroup]="profileForm">
+            <section>
+                <mat-form-field>
+                    <input matInput formControlName="nameDialog" placeholder="Название диалога" />
+                </mat-form-field>
+            </section><button mat-raised-button (click)="addDialog()">Добавить обсуждение</button>
+        </form>
+    </div>
+    <table class="tableReport">
+        <tr>
+            <th>id
+        <tr *ngFor="let dia of getDialog"><button (click)="navigateTo(dia.id)">{{dia.id}}</button></tr>
+        </th>
+        <th>Название<tr *ngFor="let dia of getDialog"> {{dia.name}} </tr>
+        </th>
+        </tr>
+    </table>
+</section>

@@ -16,6 +16,8 @@ namespace Suncity.Web.Context
         public DbSet<Report> Reports { get; set; }
         public DbSet<ChatConnection> ChatConnections { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Dialog> Dialogs { get; set; }
+        public DbSet<Message> Messages { get; set; }
         //public DbSet<IdentityRole> IdentityRole { get; set; }
         //public DbSet<IdentityUserRole<string>> IdentityUserRole { get; set; }
     }

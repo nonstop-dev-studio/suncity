@@ -54,7 +54,7 @@
         <div class="item">
         <section>
         <mat-form-field>
-        <input matInput formControlName="addressRegistration" placeholder="Адрес регистрации">
+        <input matInput formControlName="addressRegistration" placeholder="Регион">
         </mat-form-field>
         </section>
         </div>
@@ -87,6 +87,11 @@
         <button mat-raised-button (click)="getQuestionnaire()">Отправить</button>
     </section>
         </div>
+        <div class="inputButtonTwo">
+                <section>
+                <button mat-raised-button routerLink="/questionnaire/show">Посмотреть все анкеты</button>
+            </section>
+                </div>
     </form>
     </div>
 </section>

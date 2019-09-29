@@ -1,0 +1,20 @@
+<section class="content">
+    <section class="headerText">Обсуждение</section>
+    <table class="tableReport">
+        <tr>
+            <th>Сообщения
+        <tr *ngFor="let mes of message"> {{mes.msg}} </tr>
+        </th>
+        </tr>
+    </table>
+    <form [formGroup]="profileForm" class="formInput">
+        <section>
+            <mat-form-field>
+                <input matInput formControlName="msg" placeholder="Сообщение" />
+            </mat-form-field>
+        </section>
+        <section>
+            <div class="addMessageButton"><button mat-raised-button (click)="addMesage()">Добавить Сообщение</button></div>
+        </section>
+    </form>
+</section>
