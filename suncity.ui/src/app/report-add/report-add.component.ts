@@ -38,7 +38,7 @@ export class ReportAddComponent implements OnInit {
       const report: Report = {
         date:  this.f.date.value,
         child:  this.f.child.value,
-        mentor:  "",
+        mentor:  "u@q.ru",
         status: "Ожидает проверки",
         duration:  this.f.duration.value,
         whatDidYouPlanToDoAtTheMeeting:  this.f.whatDidYouPlanToDoAtTheMeeting.value,
