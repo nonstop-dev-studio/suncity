@@ -20,6 +20,7 @@ namespace Suncity.Web.Controllers
 
         // GET: api/reports
         [HttpGet]
+        [Route("/api/reports")]
         public async Task<ActionResult<IEnumerable<Report>>> GetReports() {
             return await _context.Reports.ToListAsync();
         }
