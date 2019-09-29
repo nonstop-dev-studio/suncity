@@ -25,7 +25,13 @@ export class JwtService {
                 environment.authRequest, payload)
             .pipe(tap((res: any) => {
                 localStorage.setItem('token', res.token);
+                console.log('Getting user info...');
+                this.getUserInfo();
             }));
+    }
+
+    getUserInfo() {
+        return this.httpClient.get(environment.getUser).pipe(tap(res => console.log('user: ' + res)));
     }
 
     register(data: RegisterDto) {

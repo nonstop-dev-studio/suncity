@@ -7,5 +7,6 @@ export const environment = {
   postQuestionnaire: apiUrl + 'questionnaires',
   getQuestionnaire: apiUrl + 'questionnaires',
   postReport: apiUrl + 'reports',
-  getReport: apiUrl + 'reports'
+  getReport: apiUrl + 'reports',
+  getUser: apiUrl + 'account/current'
 };

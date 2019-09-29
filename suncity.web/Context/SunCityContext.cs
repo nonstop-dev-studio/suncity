@@ -8,6 +8,8 @@ namespace Suncity.Web.Context
 {
     public class SuncityContext : IdentityDbContext<User>
     {
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){}
         public SuncityContext(DbContextOptions<SuncityContext> options) : base(options) { }
         public SuncityContext(){}

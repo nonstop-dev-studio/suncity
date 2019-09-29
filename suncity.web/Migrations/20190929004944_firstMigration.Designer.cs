@@ -10,8 +10,8 @@ using Suncity.Web.Context;
 namespace suncity.web.Migrations
 {
     [DbContext(typeof(SuncityContext))]
-    [Migration("20190928091730_Auth5")]
-    partial class Auth5
+    [Migration("20190929004944_firstMigration")]
+    partial class firstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -128,34 +128,48 @@ namespace suncity.web.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("Suncity.Web.Models.ChatConnection", b =>
+                {
+                    b.Property<string>("UserId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ChatConnectionId");
+
+                    b.Property<DateTime>("Connected");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("ChatConnections");
+                });
+
             modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int?>("AddressRegistrationId");
+                    b.Property<string>("AddressRegistration");
 
-                    b.Property<int?>("AddressResidenceId");
+                    b.Property<string>("AddressResidence");
 
-                    b.Property<bool>("AgreedToMakeReports");
+                    b.Property<string>("BirthDate");
 
-                    b.Property<bool>("AgreedToShareMedia");
+                    b.Property<string>("City");
 
-                    b.Property<bool>("AgreedWithLiabilities");
+                    b.Property<string>("Email");
 
-                    b.Property<bool>("ConsentProcessingPersonalData");
+                    b.Property<string>("IsRussianCitizenship");
 
-                    b.Property<bool>("IsRussianCitizenship");
+                    b.Property<string>("MiddleName");
 
-                    b.Property<string>("ProgrammInformationSource");
+                    b.Property<string>("Name");
+
+                    b.Property<string>("PhoneNumber");
+
+                    b.Property<string>("Surname");
 
                     b.Property<Guid>("UserId");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AddressRegistrationId");
-
-                    b.HasIndex("AddressResidenceId");
 
                     b.ToTable("Questionnaires");
                 });
@@ -169,15 +183,19 @@ namespace suncity.web.Migrations
 
                     b.Property<string>("AssessTheMoodOfTheChildBeforeAndAfterTheMeeting");
 
-                    b.Property<DateTime>("Date");
+                    b.Property<string>("Child");
+
+                    b.Property<string>("Date");
 
                     b.Property<string>("DescribeYourMoodAfterTheMeeting");
 
-                    b.Property<int>("Duration");
+                    b.Property<string>("Duration");
+
+                    b.Property<string>("Mentor");
 
                     b.Property<string>("Questions");
 
-                    b.Property<bool>("Status");
+                    b.Property<string>("Status");
 
                     b.Property<string>("TargetForNextMeeting");
 
@@ -190,30 +208,14 @@ namespace suncity.web.Migrations
                     b.ToTable("Reports");
                 });
 
-            modelBuilder.Entity("suncity.web.Models.Address", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("City");
-
-                    b.Property<string>("Country");
-
-                    b.Property<string>("Street");
-
-                    b.Property<string>("ZipCode");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Address");
-                });
-
             modelBuilder.Entity("suncity.web.Models.User", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("AccessFailedCount");
+
+                    b.Property<string>("AuthToken");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
@@ -305,17 +307,6 @@ namespace suncity.web.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("Suncity.Web.Models.Questionnaire", b =>
-                {
-                    b.HasOne("suncity.web.Models.Address", "AddressRegistration")
-                        .WithMany()
-                        .HasForeignKey("AddressRegistrationId");
-
-                    b.HasOne("suncity.web.Models.Address", "AddressResidence")
-                        .WithMany()
-                        .HasForeignKey("AddressResidenceId");
                 });
 #pragma warning restore 612, 618
         }

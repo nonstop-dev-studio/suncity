@@ -34,6 +34,25 @@ namespace suncity.web.Controllers
             this.config = config;
         }
 
+        [HttpGet("current")]
+        public async Task<ActionResult<User>> GetCurrentUser()
+        {
+            var name = User.Identity.Name;
+            if (name == null)
+            {
+                return NotFound();
+            }
+
+            var user = await userManager.FindByNameAsync(name);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return user;
+
+        }
+
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDto model)
         {
