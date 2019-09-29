@@ -8,5 +8,9 @@ export const environment = {
   getQuestionnaire: apiUrl + 'questionnaires',
   postReport: apiUrl + 'reports',
   getReport: apiUrl + 'reports',
-  getUser: apiUrl + 'account/current'
+  getUser: apiUrl + 'account/current',
+  getDialog: apiUrl + 'dialog',
+  postDialog: apiUrl + 'dialog',
+  getMessage: apiUrl + 'message',
+  postMessage: apiUrl + 'message',
 };

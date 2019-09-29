@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {}
+    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {
+    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
+        "projectUniqueName": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
         "projectName": "suncity.web",
-        "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
-        "packagesPath": "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\obj\\",
+        "projectPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
+        "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+        "outputPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrei_Fedotov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

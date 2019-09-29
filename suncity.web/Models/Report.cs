@@ -5,7 +5,7 @@ namespace Suncity.Web.Models
 {
     public class Report
     {
-        public long Id { get; set; }
+        public int Id { get; set; }
         public string Date { get; set; }
         public string Child { get; set; }
         public string Mentor { get; set; }
