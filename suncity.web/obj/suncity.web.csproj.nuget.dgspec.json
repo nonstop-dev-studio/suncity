@@ -1,34 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {}
+    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {}
   },
   "projects": {
-    "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj": {
+    "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
+        "projectUniqueName": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
         "projectName": "suncity.web",
-        "projectPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\suncity.web.csproj",
-        "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
-        "outputPath": "F:\\VKhakaton2019\\suncity\\suncity.web\\obj\\",
+        "projectPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\suncity.web.csproj",
+        "packagesPath": "C:\\Users\\Andrei_Fedotov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrei_Fedotov\\source\\repos\\suncity\\suncity.web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Andrei_Fedotov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.2"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.2": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -39,28 +39,27 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.2": {
+        "netcoreapp3.0": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.Authentication": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
+              "version": "[3.0.0-preview-19075-0444, )"
+            },
+            "Microsoft.AspNetCore.Authentication.MicrosoftAccount": {
+              "target": "Package",
+              "version": "[3.0.0-preview-18579-0056, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.3, )"
+              "version": "[3.0.0, )"
             },
             "NpgSql.EntityFrameworkCore.PostgreSQL.Design": {
               "target": "Package",
@@ -68,14 +67,28 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
