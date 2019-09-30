@@ -13,7 +13,9 @@ https://www.mindmeister.com/1329904353?t=JYhMV77ZcZ
 
 ### Реализованно за время хакатона
 UI: suncityui.andreifedotov.now.sh
+
 WebApi: https://suncity-web.herokuapp.com/
+
 Дизайн: https://www.figma.com/file/QmdD5bsNQXhVhouDPCVRSm/%D0%9D%D0%B0%D1%81%D1%82%D0%B0%D0%B2%D0%BD%D0%B8%D0%BA%D0%B8
 
 
