@@ -12,7 +12,7 @@ https://docs.google.com/document/d/1V0nd4-CzUAEK3zm_heWluIAaBTej-V5BsZ5QOPrCVfU/
 https://www.mindmeister.com/1329904353?t=JYhMV77ZcZ
 
 ### Реализованно за время хакатона
-UI: suncityui.andreifedotov.now.sh
+UI: https://suncityui.andreifedotov.now.sh/
 
 WebApi: https://suncity-web.herokuapp.com/
 
