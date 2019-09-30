@@ -1,4 +1,4 @@
-const apiUrl = 'https://localhost:44398/api/';
+const apiUrl = 'https://suncity-web.herokuapp.com/api/';
 
 export const environment = {
   production: true,
